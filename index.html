@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html>
+<head lang="de">
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="jquery/jquery-ui-1.11.4.custom/jquery-ui.css">-->
+    <script src="jquery/jquery-1.11.3.min.js"></script>
+    <script src="jquery/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <!--<script src="jquery/jquery-2.1.4.min.js"></script>-->
+    <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+    <link rel="stylesheet" href="jquery/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+    <link rel="schema.DC" href="http://purl.org/dc/terms/">
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.subject" lang="de" content="test online, eignungstest, kaufmännischer test, hauptschulniveau">
+    <meta name="DC.description" content="Kaufmännischer allgemeiner Test - Schwierigkeitsstufe I">
+    <meta name="DC.language" content="de">
+    <meta name="DC.title" content="Kaufmännischer allgemeiner Test - Schwierigkeitsstufe I">
+    <meta name="author" content="Thomas Stuppy">
+    <meta name="DC.publisher" content="Thomas Stuppy, thomas.stuppy@gmail.com">
+    <meta name="DC.contributor" content="Thomas Stuppy">
+    <meta name="reply-to" content="thomas.stuppy@gmail.com">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="keywords" content="test online, eignungstest, kaufmännischer test, hauptschulniveau">
+    <meta name="description" content="Kaufmännischer allgemeiner Test - Schwierigkeitsstufe I">
+    <meta name="viewport" content="user-scalable=no, width=device-width">
+    <link rel="favicon" href="#">
+    <link rel="publisher" href="https://plus.google.com/115957886446453798572/">
+    <title>Kaufmännischer Test I</title>
+    <style type="text/css">
+        <!--
+
+        .ui-tabs {
+
+            -o-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6) inset;;
+            -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6) inset;;
+            -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6) inset;;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6) inset;;
+        }
+
+        .ui-widget-content {
+            border: 1px solid #AAA;
+            color: #222;
+            background: rgba(255, 255, 255, 0.8);
+            font-family: Lucida Grande,Lucida Sans,Arial,sans-serif;
+            font-size: 1em;
+        }
+        li {
+            padding-bottom: 20px;
+        }
+        /* UI DRAG & DROP */
+        .draggable {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: rgba(0,0,0,0.5);
+            border: 1px solid #000;
+            -o-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 10;
+
+            background: #cfcece; /* Old browsers */
+            background: -moz-linear-gradient(top, #cfcece 0%, #606060 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#CFCECE), color-stop(100%,#606060)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #CFCECE 0%,#606060 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #CFCECE 0%,#606060 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #CFCECE 0%,#606060 100%); /* IE10+ */
+            background: linear-gradient(top,  #CFCECE 0%,#606060 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CFCECE', endColorstr='#606060',GradientType=0 ); /* IE6-9 */
+
+            -o-box-shadow: 5px 5px 5px rgba(0,0,0,0.8), inset 2px 2px 5px rgba(0,0,0,0.8);
+            -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.8), inset 2px 2px 5px rgba(0,0,0,0.8);
+            -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.8), inset 2px 2px 5px rgba(0,0,0,0.8);
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.8), inset 2px 2px 5px rgba(0,0,0,0.8);
+        }
+
+        .draggable:hover {
+            cursor: move;
+        }
+
+        .droppable {
+            width: 80px;
+            height: 80px;
+            padding: 10px;
+            z-index: 0;
+            border: 1px solid #000;
+            float: left;
+            -o-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+
+            background: rgba(0,0,0,0.2);
+
+            -o-box-shadow: 5px 5px 20px rgba(0,0,0,0.8), inset 2px 2px 5px rgba(0,0,0,0.8);
+            -moz-box-shadow: 5px 5px 20px rgba(0,0,0,0.8), inset 2px 2px 5px rgba(0,0,0,0.8);
+            -webkit-box-shadow: 5px 5px 20px rgba(0,0,0,0.8), inset 2px 2px 5px rgba(0,0,0,0.8);
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.8), inset 2px 2px 5px rgba(0,0,0,0.8);
+        }
+
+        .droppable p {
+            font-weight: bold;
+            font-variant: small-caps;
+            color: #fff;
+            font-size: 26px;
+            text-align: center;
+            text-shadow: -1px -1px 1px #000;
+            padding: 30px 0 0;
+            margin: 0;
+        }
+
+        .droppable.hovered {
+            background: rgba(0,0,0,0.5);
+        }
+
+        .ui-tabs-vertical { width: 55em; }
+        .ui-tabs-vertical .ui-tabs-nav { padding: .3em; float: left; }
+        .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+        .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+        .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }
+        .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 45em;}
+
+        .ui-helper-reset { line-height: 0.5; }
+
+        .contenttable {
+            border: 2px outset;
+            padding: 1px;
+            border-radius: 10px;
+            width: 95%;
+        }
+        .contenttable td, .contenttable th {
+            border: 1px outset;
+            border-radius: 5px;
+        }
+        -->
+    </style>
+    <script>
+        var db;
+
+        function indexedDBOk() {
+            return "indexedDB" in window;
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+            if(!indexedDBOk) return;
+
+            var openRequest = indexedDB.open("test",1);
+
+            openRequest.onupgradeneeded = function(e) {
+                var thisDB = e.target.result;
+
+                if(!thisDB.objectStoreNames.contains("kfm_test_1")) {
+                    thisDB.createObjectStore("kfm_test_1", { autoIncrement: true });
+                }
+            };
+
+            openRequest.onsuccess = function(e) {
+                console.log("running onsuccess");
+
+                db = e.target.result;
+
+                //Listen for add clicks
+                document.querySelector("#senden").addEventListener("click", addItems, false);
+                //document.querySelector("#ergebnis").addEventListener("click", addItem, false);
+
+            };
+
+            openRequest.onerror = function(e) {
+            }
+
+        },false);
+
+        function addItems(e) {
+            console.log("e: "+e);
+            console.log("event: "+event);
+
+            console.log("this: "+this);
+
+            return false;
+            /*var vorname         = document.querySelector("#vorname").value;
+            var nachname        = document.querySelector("#nachname").value;
+            var sterbejahr      = document.querySelector("#sterbejahr").value;
+            var hoehe           = document.querySelector("#hoehe").value;
+            var prueflast       = document.querySelector("#prueflast").value;
+            var hand_sicht      = document.querySelector("#hand_sicht").value;
+            var vorne_hinten    = document.querySelector("#vorne_hinten").value;
+            var gekennzeichnet  = document.querySelector("#gekennzeichnet").value;
+            var schadensbild    = document.querySelector("#schadensbild").value;
+            var bild            = document.querySelector("#bild").value;
+            var standsicher     = document.querySelector("#standsicher").value;
+
+            var transaction = db.transaction(["kfm_test_1"],"readwrite");
+            var store = transaction.objectStore("kfm_test_1");
+
+            var ergebnis = {
+                vorname:vorname,
+                nachname:nachname,
+                sterbejahr:sterbejahr,
+                hoehe:hoehe,
+                prueflast:prueflast,
+                hand_sicht:hand_sicht,
+                vorne_hinten:vorne_hinten,
+                gekennzeichnet:gekennzeichnet,
+                schadensbild:schadensbild,
+                bild:bild,
+                standsicher:standsicher,
+                datum:new Date()
+            };
+
+            var request = store.add(ergebnis);
+
+            request.onerror = function(e) {
+                console.log("Error",e.target.error.name);
+            };
+
+            request.onsuccess = function(e) {
+                console.log(ergebnis);
+            }*/
+        }
+
+        function getItems(e) {
+            var s = "";
+            /*db.transaction(["kfm_test_1"], "readonly").objectStore("kfm_test_1").openCursor().onsuccess = function(e) {
+                var cursor = e.target.result;
+                if(cursor) {
+                    s += "<tr>"+
+                                //"<td>&nbsp;</td>"+
+                            "<td>"+cursor.key+"</td>"+
+                            "<td>"+cursor.value['nachname']+", "+cursor.value['vorname']+"</td>"+
+                            "<td>"+cursor.value['sterbejahr']+"</td>"+
+                            "<td>"+cursor.value['hoehe']+"</td>"+
+                            "<td>"+cursor.value['prueflast']+"</td>"+
+                            "<td>"+cursor.value['hand_sicht']+"</td>"+
+                            "<td>"+cursor.value['vorne_hinten']+"</td>"+
+                            "<td>"+cursor.value['gekennzeichnet']+"</td>"+
+                            "<td>"+cursor.value['schadensbild']+"</td>"+
+                            "<td>"+cursor.value['bild']+"</td>"+
+                            "<td>"+cursor.value['standsicher']+"</td>"+
+                            "<td><button class='ui-btn ui-btn-icon-notext ui-icon-edit'>Edit</button></td>"+
+                            "</tr>";
+                    cursor.continue();
+                }
+                document.querySelector("#ergebnis").innerHTML = s;
+            }*/
+        }
+
+        $( "#form_test1" ).submit(function( event ) {
+            alert( "Handler for .submit() called." );
+            event.preventDefault();
+        });
+
+        $(function() {
+            // UI TABS
+               $( "#test1" ).tabs({
+                    heightStyle: "content"
+               }).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+            $( "#test1 li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+            // UI SELECT-MENÜS
+                $( " #01, #02, #07, #09, #16, #17, #18, #21 ").find( "select" ).selectmenu({
+                    width: 300
+                });
+
+            // UI BUTTON / BUTTONSET
+                // 3
+                $( "#1-3-bsp-btn, #1-3-a-btn, #1-3-b-btn, #1-3-c-btn, #1-3-d-btn, #1-3-e-btn" ).buttonset();
+                // 4
+                $( "#1-4-a-btn, #1-4-b-btn, #1-4-c-btn, #1-4-d-btn" ).buttonset();
+                $( "#1-4-a-btn-1, #1-4-b-btn-1, #1-4-c-btn-1, #1-4-d-btn-1" ).button({
+                    icons: { primary: "ui-icon-check" },
+                    width: 350
+                });
+                $( "#1-4-a-btn-6, #1-4-b-btn-6, #1-4-c-btn-6, #1-4-d-btn-6" ).button({
+                    icons: { primary: "ui-icon-close" },
+                    width: 350
+                });
+                // 5
+                $( "#1-5-a-btn, #1-5-b-btn, #1-5-c-btn, #1-5-d-btn, #1-5-e-btn, #1-5-f-btn" ).buttonset();
+                $( "#1-5-a-btn-1, #1-5-b-btn-1, #1-5-c-btn-1, #1-5-d-btn-1, #1-5-e-btn-1, #1-5-f-btn-1" ).button({
+                    icons: { primary: "ui-icon-check" },
+                    width: 350
+                });
+                $( "#1-5-a-btn-6, #1-5-b-btn-6, #1-5-c-btn-6, #1-5-d-btn-6, #1-5-e-btn-6, #1-5-f-btn-6" ).button({
+                    icons: { primary: "ui-icon-close" },
+                    width: 350
+                });
+                // 8
+                $( "#1-8-a, #1-8-b, #1-8-c, #1-8-d, #1-8-e, #1-8-f, #1-8-g" ).button();
+                //
+            // UI SPINNER
+                // 10
+                $( "#10, #11, #12, #13, #14, #15, #16").find( "input" ).spinner({
+                    culture: "de",
+                    step: 0.1
+                });
+
+            // UI DRAG & DROP
+                // 6
+                $( drag );
+                $( drop );
+                function drag() {
+                    $('.draggable').draggable({
+                        cursor: "move",
+                        revert: "invalid",
+                        opacity: 0.8,
+                        snap: ".droppable",
+                        snapMode: "inner"
+                    });
+                }
+                // Dropzone erstellen
+                function drop() {
+                    $('.droppable').droppable({
+                        accept: ".draggable",
+                        hoverClass: 'hovered',
+                        drop: positioning
+                    });
+                }
+                // Positionieren wenn erfolgreich gedroppt
+                function positioning( event, ui ) {
+                    //var inst = $(this).droppable( "instance");
+                    console.log( $(' #06 ').toArray() );
+                    position = $(this).position();
+                    ui.draggable.animate({
+                                opacity: 1,
+                                top: position.top,
+                                left: position.left
+                            }, 200
+                    );
+                }
+                // 20
+                $( "#1-20-sort" ).sortable({
+                    cursor: "move",
+                    containment: "parent",
+                    axis: "x",
+                    placeholder: "ui-state-highlight"
+
+                });
+            // INPUT STYLE
+                // 19
+                $( "#19").find( "input" ).addClass("ui-widget ui-widget-content ui-corner-all");
+
+            // DIV "wrap" AUF FENSTERHÖHE SETZEN
+                var win_height = $( window ).height();
+                $( '#wrap' ).css( 'height', win_height);
+
+            // ---
+
+/*
+            $("#form_test1").submit(function(event) {
+
+                // console.log( $( "#06" ).serializeArray() );
+
+                var object = {};
+                // Put form inputs into an array
+                var array = $(this).serializeArray();
+                // Make an object out of the array
+                $.each(array, function(index, item) {
+                    object[item.name] = item.value;
+                });
+                console.log( object );
+                $.ajax({
+                    dataType: 'json',
+                    contentType: 'application/json; charset=UTF-8',
+                    data: JSON.stringify(object),
+                    type: 'POST',
+                    url: 'validate.php'
+                }).done(function(data, textStatus, jqXHR) {
+                    console.log('Data sent.');
+
+                    $( "#result" ).html( data );
+
+                }).fail(function(jqXHR, textStatus, errorThrown) {
+                    console.log('There was an error.');
+
+                    $( "#result" ).html( 'There was an error.' );
+
+                });
+
+                return false;
+
+            });
+*/
+        });
+    </script>
+</head>
+<body lang="de" style="margin: 0">
+<form id="form_test1" name="form_test1" method="post">
+<div id="main" style="width: 1000px; height: 964px; margin: 0 auto;" >
+<div id="wrap" style="width: 1000px; display: table-cell; vertical-align: top">
+    <h2><small>611</small> Kaufm&auml;nnisch allgemeiner Test Schwierigkeitsstufe I</h2>
+    <div id="test1" style="margin: 0 auto;">
+        <ol>
+            <li><a href="#Info">Info</a></li>
+            <li><a href="#Start">Start</a></li>
+            <li><a href="#01">01</a></li>
+            <li><a href="#02">02</a></li>
+            <li><a href="#03">03</a></li>
+            <li><a href="#04">04</a></li>
+            <li><a href="#05">05</a></li>
+            <li><a href="#06">06</a></li>
+            <li><a href="#07">07</a></li>
+            <li><a href="#08">08</a></li>
+            <li><a href="#09">09</a></li>
+            <li><a href="#10">10</a></li>
+            <li><a href="#11">11</a></li>
+            <li><a href="#12">12</a></li>
+            <li><a href="#13">13</a></li>
+            <li><a href="#14">14</a></li>
+            <li><a href="#15">15</a></li>
+            <li><a href="#16">16</a></li>
+            <li><a href="#17">17</a></li>
+            <li><a href="#18">18</a></li>
+            <li><a href="#19">19</a></li>
+            <li><a href="#20">20</a></li>
+            <li><a href="#21">21</a></li>
+            <li><a href="#Ende">Ende</a></li>
+        </ol>
+
+        <div id="Info">
+            <div style="float:left;">
+                <img src="img/611.jpg" width="200" height="200">
+            </div>
+            <div style="float:right; width: 500px;">
+                <p><strong>Zielgruppe:</strong> </p>
+                <p>Das Niveau des Tests ist auf 2-j&auml;hrige kaufm&auml;nnische oder kaufm&auml;nnisch-verwandte Berufe abgestimmt, auf die sich &uuml;berwiegend Bewerber mit Hauptschulabschluss bewerben.</p>
+                <p> <strong>Testskalen</strong>:</p>
+                <ul>
+                    <li>Allgemeinwissen/Wirtschaft </li>
+                    <li>Zahlen- und Tabellenverst&auml;ndnis (Grundrechenarten mit Zahlen- und Textaufgaben, Tabellen- und Schaubildaufgaben)</li>
+                    <li>Sprachkompetenz Deutsch (Textverst&auml;ndnis, Rechtschreibung, Wortschatz, Grammatik)</li>
+                </ul>
+                <ul>
+                    <li>Dauer: 90 Minuten</li>
+                    <li>Berufsgruppe: Kaufm&auml;nnisch</li>
+                    <li>Zielgruppe: Auszubildende</li>
+                    <li>Testart: Basistest</li>
+                    <li>Testtyp: Leistungstes</li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="Start">
+            <p><span style="font-variant: small-caps">Liebe Bewerberin, lieber Bewerber,</span></p>
+            <p>lhnen liegt ein Berufsanf&auml;ngertest vor, der Aufschluss dar&uuml;ber geben soll, ob Sie &uuml;ber die     notwendigen Kenntnisse und F&auml;higkeiten f&uuml;r das von lhnen gew&auml;hlte Berufsfeld verf&uuml;gen.     Ein Test bedeutet immer etwas Stress, es ist daher verst&auml;ndlich, dass Sie sich im Moment belastet     f&uuml;hlen.     Beweisen Sie sich selbst, dass Sie die Ruhe und den &Uuml;berblick bewahren.     </p>
+            <p><span style="font-variant: small-caps">Was wird in diesem Test erwartet?</span></p>
+            <p>Manche Aufgaben verlangen F&auml;higkeiten, die vielleicht in der Schule nicht besonders trainiert     und bewertet wurden, aber f&uuml;r die Berufspraxis oft genauso wichtig sind wie umfangreiches     Schulwissen.     Wenn Sie nicht alle Aufgaben dieses Tests l&ouml;sen k&ouml;nnen, so lassen Sie sich davon nicht beirren.     In der Berufspraxis werden Mitarbeiterinnen und Mitarbeiter verschiedenartiger Begabungen     gebraucht. Dieser Test soll helfen, lhre St&auml;rken und Schw&auml;chen zu erkennen.     </p>
+            <p><span style="font-variant: small-caps">Wie wird dieser Test bearbeitet?</span></p>
+            <p>L&ouml;sen Sie zun&auml;chst diejenigen Aufgaben, die lhnen leicht erscheinen. Nachdem Sie sich     eingearbeitet haben, bem&uuml;hen Sie sich auch um die L&ouml;sang der bisher schwierig erschienenen     Aufgaben. Bitte tragen Sie, nachdem Sie die Aufgabenstellung auf der linken Leite genau gelesen     haben, lhre L&ouml;sung auf die jeweils beschriebene Weise in die dazugeh&ouml;rigen Antwortfelder auf der     rechten Seite ein. Unter jeder Aufgabennummer steht, wie viele Fehlerpunkte lhnen f&uuml;r eine falsch     oder nicht gel&ouml;ste Aufgabe angerechnet werden. Tragen Sie in jedem Fall eine L&ouml;sung ein, denn     jede fehlende L&ouml;sung wird als falsches Ergebnis gewertet.     Falls Sie einmal eine bereits eingetragene Kennziffer oder L&ouml;sung &auml;ndern m&ouml;chten, streichen Sie     diese durch und schreiben die neue Kennziffer bzw. L&ouml;sung rechts neben oder &uuml;ber das K&auml;stchen.     </p>
+            <p><span style="font-variant:small-caps">Viel Erfolg!</span></p>
+        </div>
+        <div id="01">
+            <script>
+                $(function() {
+                    var optionen =
+                            "<option value=''>...</option>" +
+                            "<option value='1'>Auslandsmeldungen</option>" +
+                            "<option value='2'>Politik</option>" +
+                            "<option value='3'>Wirtschaft</option>" +
+                            "<option value='4'>Sport</option>" +
+                            "<option value='5'>Wetter</option>";
+                    $( "#1-1-a, #1-1-b, #1-1-c, #1-1-d, #1-1-e" ).html( optionen );
+                });
+            </script>
+            <p>In einer Nachrichtensendung im Fernsehen werden viele verschiedene Meldungen
+                gesendet.
+                Die einzelnen Beitr&auml;ge lassen sich verschiedenen Bereichen zuordnen.
+                Auf der Nebenseite finden Sie die verschiedenen Bereiche (Kennziffern 1. bis 5.) und
+                die Meldungen a) bis e), die verlesen werden.</p>
+            <fieldset name="1-1" id="1-1">
+                <legend>Finden Sie zu jeder Meldung den passenden Bereich!</legend>
+                 <ol type="a">
+                    <li>
+                        <label for="1-1-a">Schwimm-WM startet mit gro&szlig;en Erwartunge</label><br>
+                        <select name="1-1-a" id="1-1-a">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-1-b">Die Aussichten: Heiter bis wolkig, 23 Grad Celsius</label><br>
+                        <select name="1-1-b" id="1-1-b">
+                        </select>
+                    </li>
+                     <li>
+                        <label for="1-1-c">Unternehmen setzen auf erneuerbare Energien</label><br>
+                        <select name="1-1-c" id="1-1-c">
+                        </select>
+                     </li>
+                     <li>
+                        <label for="1-1-d">Kanzlerkandidaten sind unterwegs auf Stimmenfang</label><br>
+                        <select name="1-1-d" id="1-1-d">
+                        </select>
+                     </li>
+                     <li>
+                        <label for="1-1-e">Hungerkatastrophe in Ostafrika</label><br>
+                        <select name="1-1-e" id="1-1-e">
+                        </select>
+                     </li>
+                </ol>
+            </fieldset>
+        </div>
+        <div id="02">
+            <script>
+                $(function() {
+                    var optionen =
+                            "<option value=''>...</option>" +
+                            "<option value='1'>international</option>" +
+                            "<option value='2'>aktiv</option>" +
+                            "<option value='3'>vertikal</option>" +
+                            "<option value='4'>zentral</option>" +
+                            "<option value='5'>rasant</option>";
+                    $( "#1-2-a, #1-2-b, #1-2-c, #1-2-d, #1-2-e" ).html( optionen );
+                });
+            </script>
+            <p>Im Alltag begegnen Ihnen h&auml;ufig Fachbegriffe, z. B. in Zeitungen oder im Radio. Auf der Nebenseite finden Sie einige h&auml;ufig genannte Fachbegriffe. Wissen Sie, was diese &ouml;rter bedeuten?</p>
+            <fieldset name="1-2" id="1-2">
+                <legend>Ordnen Sie den Erkl&auml;rungen die richtigen Fachbegriffe zu!</legend>
+                <ol type="a">
+                    <li>
+                        <label for="1-2-a">senkrecht, aufrecht</label><br>
+                        <select name="1-2-a" id="1-2-a">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-2-b">schnell, rasch</label><br>
+                        <select name="1-2-b" id="1-2-b">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-2-c">im Mittelpunkt, im Kern</label><br>
+                        <select name="1-2-c" id="1-2-c">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-2-d">weltweit, v&ouml;lkerumfassend</label><br>
+                        <select name="1-2-d" id="1-2-d">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-2-e">rege, t&auml;tig, handelnd</label><br>
+                        <select name="1-2-e" id="1-2-e">
+                        </select>
+                    </li>
+                </ol>
+            </fieldset>
+        </div>
+        <div id="03">
+            <p>Auf der Nebenseite finden Sie einige Begriffe, die zu einem Themenbereich geh&ouml;ren. Einer der jeweils vier Begriffe passt nicht in den Themenbereich. Stellen Sie fest, welcher der nebenstehenden Begriffe nicht in den Themenbereich geh&ouml;rt und tragen Sie die Kennziffer dieses Begriffes in das K&auml;stchen ein.  </p>
+            <fieldset style="width: 90%">
+                <legend>Beispiel</legend>
+                <div id="1-3-bsp-btn">
+                    <input type="radio" id="1-3-bsp-1" value="1"><label for="1-3-bsp-1">Computer</label>
+                    <input type="radio" id="1-3-bsp-2" value="2"><label for="1-3-bsp-2">Drucker</label>
+                    <input type="radio" id="1-3-bsp-3" value="3" checked><label for="1-3-bsp-3">Kugelschreiber</label>
+                    <input type="radio" id="1-3-bsp-4" value="4"><label for="1-3-bsp-4">Taschenrechner</label>
+                </div>
+                <em>Erkl&auml;rung: Bis auf den Kugelschreiber handelt es sich hier um elektronische Ger&auml;te. </em>
+            </fieldset>
+
+            <fieldset style="width: 90%">
+                <legend>a)</legend>
+                <div id="1-3-a-btn">
+                    <input type="radio" name="1-3-a" id="1-3-a-1" value="1"><label for="1-3-a-1">Postkarte</label>
+                    <input type="radio" name="1-3-a" id="1-3-a-2" value="2"><label for="1-3-a-2">Faxnachricht</label>
+                    <input type="radio" name="1-3-a" id="1-3-a-3" value="3"><label for="1-3-a-3">Aktenordner</label>
+                    <input type="radio" name="1-3-a" id="1-3-a-4" value="4"><label for="1-3-a-4">Brief</label>
+                </div>
+            </fieldset>
+
+            <fieldset style="width: 90%">
+                <legend>b)</legend>
+                <div id="1-3-b-btn">
+                    <input type="radio" name="1-3-b" id="1-3-b-1" value="1"><label for="1-3-b-1">Monitor</label>
+                    <input type="radio" name="1-3-b" id="1-3-b-2" value="2"><label for="1-3-b-2">Antiviren-Programm</label>
+                    <input type="radio" name="1-3-b" id="1-3-b-3" value="3"><label for="1-3-b-3">Drucker</label>
+                    <input type="radio" name="1-3-b" id="1-3-b-4" value="4"><label for="1-3-b-4">Tastatur</label>
+                </div>
+            </fieldset>
+
+            <fieldset style="width: 90%">
+                <legend>c)</legend>
+                <div id="1-3-c-btn">
+                    <input type="radio" name="1-3-c" id="1-3-c-1" value="1"><label for="1-3-c-1">Lineal</label>
+                    <input type="radio" name="1-3-c" id="1-3-c-2" value="2"><label for="1-3-c-2">Kugelschreiber</label>
+                    <input type="radio" name="1-3-c" id="1-3-c-3" value="3"><label for="1-3-c-3">Bleistift</label>
+                    <input type="radio" name="1-3-c" id="1-3-c-4" value="4"><label for="1-3-c-4">Textmarker</label>
+                </div>
+            </fieldset>
+
+            <fieldset style="width: 90%">
+                <legend>d)</legend>
+                <div id="1-3-d-btn">
+                    <input type="radio" name="1-3-d" id="1-3-d-1" value="1"><label for="1-3-d-1">Einkauf</label>
+                    <input type="radio" name="1-3-d" id="1-3-d-2" value="2"><label for="1-3-d-2">Buchhaltung</label>
+                    <input type="radio" name="1-3-d" id="1-3-d-3" value="3"><label for="1-3-d-3">Vertrieb</label>
+                    <input type="radio" name="1-3-d" id="1-3-d-4" value="4"><label for="1-3-d-4">Paketdienst</label>
+                </div>
+            </fieldset>
+
+            <fieldset style="width: 90%">
+                <legend>e)</legend>
+                <div id="1-3-e-btn">
+                    <input type="radio" name="1-3-e" id="1-3-e-1" value="1"><label for="1-3-e-1">Zeitungsanzeige</label>
+                    <input type="radio" name="1-3-e" id="1-3-e-2" value="2"><label for="1-3-e-2">&Uuml;berweisungstr&auml;ger</label>
+                    <input type="radio" name="1-3-e" id="1-3-e-3" value="3"><label for="1-3-e-3">Plakat</label>
+                    <input type="radio" name="1-3-e" id="1-3-e-4" value="4"><label for="1-3-e-4">Prospekt</label>
+                </div>
+            </fieldset>
+
+        </div>
+        <div id="04">
+            <p>Mert und Tom beginnen bald mit ihrer Berufsausbildung. Sie haben sich vorher &uuml;ber B die Rechte und Pflichten eines Auszubildenden informiert und unterhalten sich nun dar&uuml;ber.
+                Nebenstehend finden Sie Merts und Toms Aussagen &uuml;ber die Berufsausbildung.</p>
+            <p> Kennzeichnen Sie alle richtigen und alle falschen Aussagen!</p>
+            <ol type="a">
+                <li>
+                    <fieldset id="1-4-a">
+                        <legend>&bdquo;Wenn der Ausbildende mit unserer Leistung nicht zufrieden ist, kann uns jederzeit fristlos gek&uuml;ndigt werden.&ldquo;</legend>
+                        <div id="1-4-a-btn">
+                            <input type="radio" id="1-4-a-btn-1" name="1-4-a" value="1"><label for="1-4-a-btn-1">Richtig</label>
+                            <input type="radio" id="1-4-a-btn-6" name="1-4-a" value="6"><label for="1-4-a-btn-6">Falsch</label>
+                        </div>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset id="1-4-b">
+                        <legend>&bdquo;Eine angemessene Ausbildungsverg&uuml;tung steht jedem Auszubildenden zu.&ldquo;</legend>
+                        <div id="1-4-b-btn">
+                            <input type="radio" id="1-4-b-btn-1" name="1-4-b" value="1"><label for="1-4-b-btn-1">Richtig</label>
+                            <input type="radio" id="1-4-b-btn-6" name="1-4-b" value="6"><label for="1-4-b-btn-6">Falsch</label>
+                        </div>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset id="1-4-c">
+                        <legend>&bdquo;Wenn Unterricht in der Berufsschule ausf&auml;llt, m&uuml;ssen wir unseren Arbeitgeber dar&uuml;ber informieren.&ldquo;</legend>
+                        <div id="1-4-c-btn">
+                            <input type="radio" id="1-4-c-btn-1" name="1-4-c" value="1"><label for="1-4-c-btn-1">Richtig</label>
+                            <input type="radio" id="1-4-c-btn-6" name="1-4-c" value="6"><label for="1-4-c-btn-6">Falsch</label>
+                        </div>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset id="1-4-d">
+                        <legend>&bdquo;Azubis bekommen wesentlich weniger Urlaub als die &uuml;brigen Mitarbeiter.&ldquo;</legend>
+                        <div id="1-4-d-btn">
+                            <input type="radio" id="1-4-d-btn-1" name="1-4-d" value="1" class="richtig"><label for="1-4-d-btn-1">Richtig</label>
+                            <input type="radio" id="1-4-d-btn-6" name="1-4-d" value="6"><label for="1-4-d-btn-6">Falsch</label>
+                        </div>
+                    </fieldset>
+                </li>
+            </ol>
+        </div>
+        <div id="05">
+            <p>Welche der folgenden Aussagen zur Europ&auml;ischen Union (EU) stimmen, welche nicht?</p>
+            <p> Kennzeichnen Sie alle richtigen und alle falschen Aussagen!</p>
+            <ol type="a">
+                <li>
+                    <fieldset id="1-5-a">
+                        <legend>Die B&uuml;rger der EU w&auml;hlen regelm&auml;&szlig;ig die Mitglieder des Europ&auml;ischen Parlamentes</legend>
+                        <div id="1-5-a-btn">
+                            <input type="radio" id="1-5-a-btn-1" name="1-5-a" value="1"><label for="1-5-a-btn-1">Richtig</label>
+                            <input type="radio" id="1-5-a-btn-6" name="1-5-a" value="6"><label for="1-5-a-btn-6">Falsch</label>
+                        </div>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset id="1-5-b">
+                        <legend>In allen L&auml;ndern der EU ist der Euro die gemeinsame W&auml;hrung</legend>
+                        <div id="1-5-b-btn">
+                            <input type="radio" id="1-5-b-btn-1" name="1-5-b" value="1"><label for="1-5-b-btn-1">Richtig</label>
+                            <input type="radio" id="1-5-b-btn-6" name="1-5-b" value="6"><label for="1-5-b-btn-6">Falsch</label>
+                        </div>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset id="1-5-c">
+                        <legend>Innerhalb der EU gibt es keine Z&ouml;lle</legend>
+                        <div id="1-5-c-btn">
+                            <input type="radio" id="1-5-c-btn-1" name="1-5-c" value="1"><label for="1-5-c-btn-1">Richtig</label>
+                            <input type="radio" id="1-5-c-btn-6" name="1-5-c" value="6"><label for="1-5-c-btn-6">Falsch</label>
+                        </div>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset id="1-5-d">
+                        <legend>Unionsb&uuml;rger d&uuml;rfen in alle Mitgliedstaaten frei reisen</legend>
+                        <div id="1-5-d-btn">
+                            <input type="radio" id="1-5-d-btn-1" name="1-5-d" value="1"><label for="1-5-d-btn-1">Richtig</label>
+                            <input type="radio" id="1-5-d-btn-6" name="1-5-d" value="6"><label for="1-5-d-btn-6">Falsch</label>
+                        </div>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset id="1-5-e">
+                        <legend>Die EU umfasst insgesamt 9 Mitgliedstaaten</legend>
+                        <div id="1-5-e-btn">
+                            <input type="radio" id="1-5-e-btn-1" name="1-5-e" value="1"><label for="1-5-e-btn-1">Richtig</label>
+                            <input type="radio" id="1-5-e-btn-6" name="1-5-e" value="6"><label for="1-5-e-btn-6">Falsch</label>
+                        </div>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset id="1-5-f">
+                        <legend>Die Schweiz ist kein Mitgliedstaat der EU</legend>
+                        <div id="1-5-f-btn">
+                            <input type="radio" id="1-5-f-btn-1" name="1-5-f" value="1"><label for="1-5-f-btn-1">Richtig</label>
+                            <input type="radio" id="1-5-f-btn-6" name="1-5-f" value="6"><label for="1-5-f-btn-6">Falsch</label>
+                        </div>
+                    </fieldset>
+                </li>
+            </ol>
+        </div>
+        <div id="06">
+            <p>Wenn Sie eine Ware kaufen, finden Sie auf der Verpackung meist die Abbildung eines D Symbols. Dieses Zeichen kann Ihnen z. B. eine Information &uuml;ber die Ware liefern. Unten sehen Sie einige Beispiele f&uuml;r Symbole auf Verpackungen. Kennen Sie deren Bedeutung? </p>
+            <p>Ordnen Sie den unten stehenden Erkl&auml;rungen die entsprechenden Symbole zu, indem Sie die Symbole mit der Maus an die richtige Stelle ziehen (drag &amp; drop)!</p>
+
+            <table id="1-6-list" style="width: 100%; padding-bottom: 130px">
+                <tr>
+                    <td>
+                        <img src="img/test1_aufg06_a.png" class="draggable" id="1-6-a" name="1-6-a">
+                    </td>
+                    <td>
+                        <img src="img/test1_aufg06_b.png" class="draggable" id="1-6-b" name="1-6-b">
+                    </td>
+                    <td>
+                        <img src="img/test1_aufg06_c.png" class="draggable" id="1-6-c" name="1-6-c">
+                    </td>
+                    <td>
+                        <img src="img/test1_aufg06_d.png" class="draggable" id="1-6-d" name="1-6-d">
+                    </td>
+                    <td>
+                        <img src="img/test1_aufg06_e.png" class="draggable" id="1-6-e" name="1-6-e">
+                    </td>
+                    <td>
+                        <img src="img/test1_aufg06_f.png" class="draggable" id="1-6-f" name="1-6-f">
+                    </td>
+                </tr>
+            </table>
+
+
+            <table cellspacing="20px">
+                <tr>
+                    <td>
+                        <div class="droppable" id="1-6-1"  name="1-6-1">
+                            <p>1</p>
+                        </div>
+                    </td>
+                    <td>Pr&uuml;fsiegel/G&uuml;tesiegeI f&uuml;r besonders umweltschonende Produkte oder Dienstleistungen</td>
+                    <td>
+                        <div class="droppable" id="1-6-2"  name="1-6-2">
+                            <p>2</p>
+                        </div>
+                    </td>
+                    <td>Symbol f&uuml;r ein Produkt, das nicht &uuml;ber den Hausm&uuml;ll entsorgt werden darf</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="droppable" id="1-6-3"  name="1-6-3">
+                            <p>3</p>
+                        </div>
+                    </td>
+                    <td>Kennzeichnung f&uuml;r im Europ&auml;ischen Wirtschaftsraum frei verkehrsf&auml;hige Industrieerzeugnisse</td>
+                    <td>
+                        <div class="droppable" id="1-6-4"  name="1-6-4">
+                            <p>4</p>
+                        </div>
+                    </td>
+                    <td>Kennzeichnung f&uuml;r ein Produkt, das f&uuml;r Kinder unter drei Jahren nicht geeignet ist</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="droppable" id="1-6-5"  name="1-6-5">
+                            <p>5</p>
+                        </div>
+                    </td>
+                    <td>Symbol f&uuml;r ein Produkt, bei dem eine Handw&auml;sche empfohlen wird</td>
+                    <td>
+                        <div class="droppable" id="1-6-6"  name="1-6-6">
+                            <p>6</p>
+                        </div>
+                    </td>
+                    <td>Zeichen f&uuml;r Einwegverpackungen mit Pfand</td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="07">
+            <script>
+                $(function() {
+                    var optionen =
+                            "<option value=''>...</option>" +
+                            "<option value='1'>Einkauf</option>" +
+                            "<option value='2'>Verkauf</option>" +
+                            "<option value='3'>Personal</option>" +
+                            "<option value='4'>Werbung/Marketing</option>" +
+                            "<option value='5'>Buchhaltung</option>";
+                    $( " #07 ").find( "select" ).html( optionen );
+                });
+            </script>
+            
+            <p>Ihr Ausbildungsbetrieb gliedert sich in viele verschiedene Abteilungen mit unterschiedlichen
+                Aufgaben.</p>
+            <p>Sie sitzen zurzeit in der Telefonzentrale und sollen die Anrufer mit den entsprechenden
+                Abteilungen verbinden.</p>
+            <p> In lhrem Ausbildungsbetrieb gibt es die nebenstehenden Abteilungen. Stellen Sie fest,
+                mit welcher Abteilung Sie die Anrufer in den auf der rechten Seite genannten Situationen
+                verbinden m&uuml;ssen. Tragen Sie die Kennziffer der Abteilung in das K&auml;stchen
+                rechts neben der entsprechenden Situation ein.</p>
+            <fieldset name="1-7" id="1-7">
+                <legend>Situationen</legend>
+                <ol type="a">
+                    <li>
+                        <label for="1-7-a">Herr Wiesner ruft im Auftrag eines Lieferanten f&uuml;r B&uuml;romaterial an. In diesem Monat kann er Druckerpapier besonders g&uuml;nstig anbieten.</label><br>
+                        <select name="1-7-a" id="1-7-a">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-7-b">Frau Schneping hat im letzten Monat als Aushilfe in lhrem Ausbildungsbetrieb gearbeitet. Sie ben&ouml;tigt noch ihre Lohnsteuerkarte zur&uuml;ck.</label><br>
+                        <select name="1-7-b" id="1-7-b">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-7-c">Herr Sebaldt hat vor einiger Zeit eine Bewerbung an Ihren Ausbildungsbetrieb gerichtet und m&ouml;chte nun wissen, was daraus geworden ist.</label><br>
+                        <select name="1-7-c" id="1-7-c">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-7-d">Frau Merkens ben&ouml;tigt eine Preisinformation &uuml;ber einen von lhrem Ausbildungsbetrieb angebotenen Artikel.</label><br>
+                        <select name="1-7-d" id="1-7-d">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-7-e">Frau Yalcin hat eine Mahnung erhalten, den angemahnten                            Betrag aber p&uuml;nktlich mit Rechnungserhalt &uuml;berwiesen.</label><br>
+                        <select name="1-7-e" id="1-7-e">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-7-f">Ihr Ausbildungsbetrieb schaltet regelm&auml;&szlig;ig eine Anzeige in der Wochenendausgabe einer lokalen Zeitung. Frau Merz von der Anzeigenabteilung m&ouml;chte wissen, ob in der n&auml;chsten Ausgabe wieder eine Anzeige erscheinen soll.</label><br>
+                        <select name="1-7-f" id="1-7-f">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-7-g">Frau Sanchez m&ouml;chte einen bestimmten Artikel telefonisch bestellen.</label><br>
+                        <select name="1-7-g" id="1-7-g">
+                        </select>
+                    </li>
+                </ol>
+            </fieldset>
+        </div>
+        <div id="08">
+            <p>Hendrik Merz macht eine Ausbildung in einem Unternehmen mit internationalen Kontakten. Nachmittags muss er die ausgehende Post sortieren und zwischen Empf&auml;ngern in Deutschland und Empf&auml;ngern im Ausland unterscheiden.</p>
+            <p>Welche Briefe werden innerhalb Deutschlands verschickt, welche ins Ausland?</p>
+            <p>Markieren Sie Briefe, die innerhalb Deutschlands verschickt werden, indem Sie den Buchstaben am jeweiligen Zeilenbeginn anklicken!</p>
+            <ol style="list-style-type:none">
+                <li><input type="checkbox" id="1-8-a" name="1-8-a" value="1"><label for="1-8-a">a)</label>
+                    Firma Teschner, Erfurt</li>
+                <li><input type="checkbox" id="1-8-b" name="1-8-b" value="1"><label for="1-8-b">b)</label>
+                    Firma van de Loop, Arnheim</li>
+                <li><input type="checkbox" id="1-8-c" name="1-8-c" value="1"><label for="1-8-c">c)</label>
+                    Firma Havel, Danzig</li>
+                <li><input type="checkbox" id="1-8-d" name="1-8-d" value="1"><label for="1-8-d">d)</label>
+                    Firma Meyrink, Wien</li>
+                <li><input type="checkbox" id="1-8-e" name="1-8-e" value="1"><label for="1-8-e">e)</label>
+                    Firma Weller, Prag</li>
+                <li><input type="checkbox" id="1-8-f" name="1-8-f" value="1"><label for="1-8-f">f)</label>
+                    Firma Sigloch, Stuttgart</li>
+                <li><input type="checkbox" id="1-8-g" name="1-8-g" value="1"><label for="1-8-g">g)</label>
+                    Firma Nowatzki, Kiel</li>
+            </ol>
+        </div>
+        <div id="09">
+            <script>
+                $(function() {
+                    var optionen =
+                            "<option value=''>...</option>" +
+                            "<option value='1'>A bis D</option>" +
+                            "<option value='2'>E bis H</option>" +
+                            "<option value='3'>I bis M</option>" +
+                            "<option value='4'>N bis S</option>" +
+                            "<option value='5'>T bis Z</option>";
+                    $( "#1-9-a, #1-9-b, #1-9-c, #1-9-d, #1-9-e" ).html( optionen );
+                });
+            </script>
+            <p>Zu Hendriks Aufgaben geh&ouml;rt es auch, Rechnungen von Lieferanten in die entsprechenden                Ordner abzuheften. Die Rechnungen werden alphabetisch nach den Namen der Lieferanten sortiert und                anschlie&szlig;end in die Ordner geheftet. Hendrik stehen die auf der Nebenseite genannten Ordner zur Verf&uuml;gung.</p>
+            <fieldset name="1-9" id="1-9">
+                <legend>Welche Rechnung geh&ouml;rt in welchen Ordner?<br><small>Beachten Sie, dass ein Ordner immer mehrere Anfangsbuchstaben umfasst.</small></legend>
+                <ol type="a">
+                    <li>
+                        <label for="1-9-a">Gottwald GmbH vom 21. April</label><br>
+                        <select name="1-9-a" id="1-9-a">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-9-b">Kirchner AG vom 25. April</label><br>
+                        <select name="1-9-b" id="1-9-b">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-9-c">&Ouml;rtel GmbH vom 22. April</label><br>
+                        <select name="1-9-c" id="1-9-c">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-9-d">Cefix GmbH und Co. KG vom 22. April</label><br>
+                        <select name="1-9-d" id="1-9-d">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-9-e">Yolanda GmbH vom 28. April</label><br>
+                        <select name="1-9-e" id="1-9-e">
+                        </select>
+                    </li>
+                </ol>
+            </fieldset>
+        </div>
+        <div id="10">
+            <p>L&ouml;sen Sie die nebenstehenden Rechenaufgaben a) bis d), indem Sie die Ergebnisse  in die entsprechenden K&auml;stchen eintragen.</p>
+            <ol type="a">
+                <li>Addieren Sie und rechnen Sie das Ergebnis in Meter (m) um:<br />
+                    <label for="1-10-a">45 cm + 26 cm + 90 cm + 240 cm + 24 cm</label>
+                    <span style="float: right;">
+                        =&nbsp;<input type="text" id="1-10-a" name="1-10-a" placeholder="0.00">
+                    </span>
+                </li>
+                <li>Addieren Sie und rechnen Sie das Ergebnis in Liter (l) um:<br />
+                    <label for="1-10-b">500 ml + 300 ml + 150 ml + 74 ml + 176 ml</label>
+                    <span style="float: right;">
+                        =&nbsp;<input type="text" id="1-10-b" name="1-10-b" placeholder="0.0">
+                    </span>
+                </li>
+                <li>Addieren Sie und rechnen Sie das Ergebnis in Stunden (h) um:<br />
+                    <label for="1-10-c">40 min + 80 min + 30 min + 30 min + 60 min</label>
+                    <span style="float: right;">
+                        =&nbsp;<input type="text" id="1-10-c" name="1-10-c" placeholder="0.00">
+                    </span>
+                </li>
+                <li>Addieren Sie und rechnen Sie das Ergebnis in Kilogramm (kg) um:<br />
+                    <label for="1-10-d">4500 g + 890 g + 310 g + 600 g + 2100 g</label>
+                    <span style="float: right;">
+                        =&nbsp;<input type="text" id="1-10-d" name="1-10-d" placeholder="0.0">
+                    </span>
+                </li>
+            </ol>
+        </div>
+        <div id="11">
+            <p>L&ouml;sen Sie die nebenstehenden Rechenaufgaben a) bis d), indem Sie die Ergebnisse in die K&auml;stchen rechts neben der entsprechenden Aufgabe eintragen.</p>
+            <ol type="a">
+                <li>
+                    <label for="1-11-a">34,80 &euro; + 12,95 &euro; + 42,00 &euro; + 17,80 &euro; - 15,50 &euro;</label>
+                    <span style="float: right;">
+                        =&nbsp;<input type="text" id="1-11-a" name="1-11-a" placeholder="0.00">&nbsp;&euro;
+                    </span>
+                </li>
+                <li>
+                    <label for="1-11-b">540,00 &euro; - 205,00 &euro;  - 199,99 &euro; -35,95 &euro;</label>
+                    <span style="float: right;">
+                        =&nbsp;<input type="text" id="1-11-b" name="1-11-b" placeholder="0.00">&nbsp;&euro;
+                    </span>
+                </li>
+                <li>
+                    <label for="1-11-c">15,95 &euro; * 3 + 12,95 &euro; * 4</label>
+                    <span style="float: right;">
+                        =&nbsp;<input type="text" id="1-11-c" name="1-11-c" placeholder="0.00">&nbsp;&euro;
+                    </span>
+                </li>
+                <li>
+                    <label for="1-11-d">454,80 &euro; : 4 - 355,95 &euro; : 21</label>
+                    <span style="float: right;">
+                        =&nbsp;<input type="text" id="1-11-d" name="1-11-d" placeholder="0.00">&nbsp;&euro;
+                    </span>
+                </li>
+            </ol>
+        </div>
+        <div id="12">
+            <p>In einem Gesch&auml;ft m&uuml;ssen Sie einen Betrag von 72,80 &euro; bezahlen. Sie geben den
+                auf der Nebenseite abgebildeten Betrag.</p>
+            <p>Wie viel Euro Wechselgeld bekommen Sie zur&uuml;ck?</p>
+            <div style="text-align: center;">
+                <img src="img/test1_aufg12_geld.png" alt="Wie viel Euro Wechselgeld bekommen Sie zur&uuml;ck?" width="300">
+                <p><input type="text" id="1-12" name="1-12" placeholder="0.00"></p>
+            </div>
+        </div>
+        <div id="13">
+            <p>Sie fahren morgens mit der Buslinie CE 64 zur Arbeit. Wenn Sie den Bus um 9:04 Uhr nehmen, sind Sie in der Regel um 9:26 Uhr an lhrer Zielhaltestelle. Wenn Sie fr&uuml;h dran sind, haben Sie auch die M&ouml;glichkeit, mit der Buslinie 911 zu fahren. Diese f&auml;hrt um 8:59 Uhr ab und erreicht um 9:24 Uhr Ihre Zielhaltestelle. </p>
+            <ol type="a">
+                <li>
+                    <label for="1-13-a">Wie viele Minuten sind Sie mit der Buslinie 911 l&auml;nger unterwegs als mit der Linie Minuten CE 64?</label><br>
+                    <input type="text" id="1-13-a" name="1-13-a" placeholder="0.00">
+                </li>
+                <li>Montags beenden Sie Ihren Arbeitstag um 18:30 Uhr und fahren danach zum Schwimmen. Sie nehmen die Linie 91 4, die in der Regel 22 Minuten sp&auml;ter an Uhr lhrer Zielhaltestelle ankommt. Von dort ben&ouml;tigen Sie noch einmal 9 Minuten bis Sie an Ihrem Hallenbad angelangt sind. <br>
+                    <label for="1-13-b">Um wie viel Uhr treffen Sie in der Regel beim Hallenbad ein?</label>
+                    <input type="text" id="1-13-b" name="1-13-b" placeholder="0.00">
+                </li>
+            </ol>
+        </div>
+        <div id="14">
+            <p>Zu den T&auml;tigkeiten Ihres Ausbildungsberufes geh&ouml;rt auch, Briefsendungen f&uuml;r Ihren Ausbildungsbetrieb zu verschicken. Die unten stehende Tabelle informiert Sie dar&uuml;ber, wie viel Porto f&uuml;r die einzelnen Sendungen gezahlt werden muss.</p>
+            <p>Schauen Sie sich die Tabelle an und stellen Sie dann fest, wie hoch das Porto f&uuml;r die nebenstehenden Sendungen ist.</p>
+            <p>Was kosten nach den Angaben in der Tabelle nebenstehende Postsendungen im Inland? Tragen Sie die Ergebnisse in die K&auml;stchen ein.</p>
+            <table class="contenttable">
+                <caption>
+                    <div align="left"><strong>Produktpreise - Deutsche Post AG</strong><br />
+                        <small>Brief/Kommunikation - National (Auszug)</small></div>
+                </caption>
+                <tr>
+                    <th scope="col">Art der Sendung</th>
+                    <th scope="col">H&ouml;chstgewicht</th>
+                    <th scope="col">Porto &euro;</th>
+                </tr>
+                <tfoot>
+                <tr>
+                    <td colspan="3" style="border:none"><div align="right"><em>Stand: 1. August 2011</em></div></td>
+                </tr>
+                </tfoot>
+                <tr>
+                    <td>Standardbrief</td>
+                    <td rowspan="3" valign="middle"><div align="right">20 g </div></td>
+                    <td valign="middle"><div align="right">0,55</div></td>
+                </tr>
+                <tr>
+                    <td>B&uuml;chersendung Standard</td>
+                    <td valign="middle"><div align="right">0,45</div></td>
+                </tr>
+                <tr>
+                    <td>Warensendung Standard</td>
+                    <td valign="middle"><div align="right">0,45</div></td>
+                </tr>
+                <tr>
+                    <td>Postkarte</td>
+                    <td valign="middle"><div align="right"></div></td>
+                    <td valign="middle"><div align="right">0,45</div></td>
+                </tr>
+                <tr>
+                    <td>Kompaktbrief</td>
+                    <td rowspan="3" valign="middle"><div align="right">50 g </div></td>
+                    <td valign="middle"><div align="right">0,90</div></td>
+                </tr>
+                <tr>
+                    <td>B&uuml;chersendung Kompakt</td>
+                    <td valign="middle"><div align="right">0,60</div></td>
+                </tr>
+                <tr>
+                    <td>Warensendung Kompakt</td>
+                    <td valign="middle"><div align="right">0,70</div></td>
+                </tr>
+                <tr>
+                    <td>Gro&szlig;brief</td>
+                    <td valign="middle"><div align="right">500 g</div></td>
+                    <td valign="middle"><div align="right">1,45</div></td>
+                </tr>
+                <tr>
+                    <td>B&uuml;chersendung Gro&szlig;</td>
+                    <td valign="middle"><div align="right">500 g</div></td>
+                    <td valign="middle"><div align="right">0,85</div></td>
+                </tr>
+                <tr>
+                    <td>Maxibrief</td>
+                    <td valign="middle"><div align="right">1000 g</div></td>
+                    <td valign="middle"><div align="right">2,20</div></td>
+                </tr>
+                <tr>
+                    <td>B&uuml;chersendung Maxi</td>
+                    <td valign="middle"><div align="right">1000 g</div></td>
+                    <td valign="middle"><div align="right">1,40</div></td>
+                </tr>
+                <tr>
+                    <td>Warensendung Maxi</td>
+                    <td valign="middle"><div align="right">500 g</div></td>
+                    <td valign="middle"><div align="right">1,65</div></td>
+                </tr>
+            </table>
+            <ol type="a">
+                <li>
+                    <label for="1-14-a">Eine B&uuml;chersendung Gro&szlig; (450 g)</label><br>
+                    <input type="text" id="1-14-a" name="1-14-a" placeholder="0.00">
+                </li>
+                <li>
+                    <label for="1-14-b">Ein Kompaktbrief (45 g)</label><br>
+                    <input type="text" id="1-14-b" name="1-14-b" placeholder="0.00">
+                </li>
+                <li>
+                    <label for="1-14-c">Zwei Warensendungen Maxi (je 450 g)</label><br>
+                    <input type="text" id="1-14-c" name="1-14-c" placeholder="0.00">
+                </li>
+            </ol>
+        </div>
+        <div id="15">
+            <p>Sie haben im August 2011 einige Musiktitel heruntergeladen. Unten stehend k&ouml;nnen
+                Sie sehen, welche Titel zu diesem Zeitpunkt an der Spitze der Charts waren, und wie teuer der Download der einzelnen Titel war.</p>
+            <p> Schauen Sie sich die Liste an und l&ouml;sen Sie die nebenstehenden Aufgaben.</p>
+            <table class="contenttable">
+                <tr>
+                    <th colspan="4" scope="col">Top 10 Single-Charts</th>
+                </tr>
+                <tr>
+                    <td><em>1.</em></td>
+                    <td><em>Alexandra Stan</em></td>
+                    <td><em>Mr. Saxobeat</em></td>
+                    <td><em>1,49 &euro; </em></td>
+                </tr>
+                <tr>
+                    <td><em>2.</em></td>
+                    <td><em>Don Omar, Lucenzo</em></td>
+                    <td><em>Danza Kuduro</em></td>
+                    <td><em>0,99 &euro; </em></td>
+                </tr>
+                <tr>
+                    <td><em>3.</em></td>
+                    <td><em>Lady GaGa</em></td>
+                    <td><em>The Edge Of Glory</em></td>
+                    <td><em>1,49 &euro;</em></td>
+                </tr>
+                <tr>
+                    <td><em>4.</em></td>
+                    <td><em>Adele</em></td>
+                    <td><em>Set Fire To The Rain</em></td>
+                    <td><em>1,29 &euro;</em></td>
+                </tr>
+                <tr>
+                    <td><em>5.</em></td>
+                    <td><em>DJ Antoine vs. Timati</em></td>
+                    <td><em>Welcorne To St. Tropez</em></td>
+                    <td><em>1,29 &euro;</em></td>
+                </tr>
+                <tr>
+                    <td><em>6.</em></td>
+                    <td><em>Jennifer Lopez/Pitbull</em></td>
+                    <td><em>On The Fluor</em></td>
+                    <td><em>1,49 &euro;</em></td>
+                </tr>
+                <tr>
+                    <td><em>7.</em></td>
+                    <td><em>Tim Bendzko</em></td>
+                    <td><em>Nur noch kurz die Welt retten</em></td>
+                    <td><em>1,49 &euro;</em></td>
+                </tr>
+                <tr>
+                    <td><em>8.</em></td>
+                    <td><em>Pitbull feat Ne-Yo ...</em></td>
+                    <td><em>Give Me Everything</em></td>
+                    <td><em>1,49 &euro;</em></td>
+                </tr>
+                <tr>
+                    <td><em>9.</em></td>
+                    <td><em>Brooke Fraser</em></td>
+                    <td><em>Sornething In The Water<br />
+                    </em></td>
+                    <td><em>1,29 &euro;</em></td>
+                </tr>
+                <tr>
+                    <td><em>10.</em></td>
+                    <td><em> Katy Perry</em></td>
+                    <td><em>Last Friday Night</em></td>
+                    <td><em>1,49 &euro;</em></td>
+                </tr>
+            </table>
+            <ol type="a">
+                <li>
+                    <label for="1-15-a">Sie haben an einem Tag die aktuellen Titel von Alexandra Stan, Lady GaGa und Adele heruntergeladen. Wie viel Euro mussten Sie insgesamt f&uuml;r die Titel zahlen?</label><br>
+                    <input type="text" id="1-15-a" name="1-15-a" placeholder="0.00">
+                </li>
+                <li>
+                    <label for="1-15-b">Das aktuelle Album von Take That kostet 9,95 &euro;. Auf dem Album sind 11 Lieder, die man auch einzeln herunterladen kann. Ein Lied kostet 1,49 &euro;. Wie viel Euro sparen Sie, wenn Sie das komplette Album kaufen, anstatt jeden Titel einzeln herunterzuladen?</label><br>
+                    <input type="text" id="1-15-b" name="1-15-b" placeholder="0.00">
+                </li>
+            </ol>
+        </div>
+        <div id="16">
+            <p>Das nebenstehende Schaubild informiert Sie dar&uuml;ber, wie viele Minuten die unterschiedlichen Medien (z. B. B&uuml;cher, Fernsehen und Zeitung) pro Tag genutzt werden. Sehen Sie sich das Schaubild aufmerksam an und beantworten Sie dann die auf der rechten Seite aufgef&uuml;hrten Fragen.</p>
+            <img src="img/test1_aufg16_medienkonsum.png" alt="Durchschnittlicher t&auml;glicher Medienkonsum in Minuten" name="So nutzen wir die Medien" width="250" height="327">
+            <ol type="a">
+                <li>
+                    <label for="1-16-a">Wie viele Minuten nutzt ein Durchschnittsb&uuml;rger das Radio t&auml;glich mehr als das Internet?</label><br>
+                        <input type="text" id="1-16-a" name="1-16-a" placeholder="0">&nbsp;Minuten
+                </li>
+                <li>
+                    <label for="1-16-b">Wie hoch ist der durchschnittliche t&auml;gliche Medienkonsum insgesamt?</label><br>
+                        <input type="text" id="1-16-b" name="1-16-b" placeholder="0">&nbsp;Minuten
+                </li>
+                <li>
+                    <label for="1-16-c">Wieviel mal h&ouml;her ist der Fernsehkonsum als der Konsum von B&uuml;chern?</label><br>
+                        <select id="1-16-c">
+                            <option></option>
+                            <option value="1">Zehnmal so hoch</option>
+                            <option value="2">Hundertmal so hoch</option>
+                            <option value="3">Doppelt so hoch</option>
+                        </select>
+                </li>
+            </ol>
+        </div>
+        <div id="17">
+            <fieldset name="1-17" id="1-17">
+                <legend>
+                    <p>Lesen Sie den unten stehenden Text aufmerksam durch. Beantworten Sie danach die auf der Nebenseite stehenden Fragen. Tragen Sie jeweils die Kennziffer der richtigen Antwort in das entsprechende K&auml;stchene ein.</p>
+                    <p>Am Montag war Lena Droste im Kaufhaus Sparwas. Inmitten der vielen T-Shirts und Blusen suchte sie ein trendiges Long-Shirt, das zu ihrer neuen Hose passen sollte. Aber sie fand nur Long-Shirts in Braun und Grau und sie wollte doch lieber eine knallige Farbe. Ein Shirt war zwar recht bunt, aber quergestreift. Ein anderes Muster w&auml;re Lena lieber gewesen. Unverrichteter Dinge verlie&szlig; Lena das Kaufhaus und traf sich mit ihrer Freundin Lucia, um im Caf&eacute; Luisa einen Latte macchiato zu trinken.</p>
+                    <p>Doch Lena gab nicht auf. Zwei Tage sp&auml;ter unternahm sie einen erneuten Versuch. Diesmal fuhr sie nach Neuss, denn ihre Freundin Mia aus Krefeld hatte ihr den Tipp gegeben, es doch mal in der Boutique auf der Dusseldorfer Stra&szlig;e zu versuchen. Der Tipp stellte sich als sehr gut heraus, denn Lena verlie&szlig; die Boutique mit einer vollen T&uuml;te. Am n&auml;chsten Tag zeigte sie ihrer Freundin Mia, was sie gekauft hatte: zwei Hosen, eine Bolero-Jacke, zwei T-Shirts und eine l&auml;ngsgestreifte Bluse in Grau - von einem Long-Shirt allerdings keine Spur.</p>
+                </legend>
+                <ol type="a">
+                    <li>
+                        <label for="1-17-a">Was m&ouml;chte Lena im Kaufhaus Sparwas kaufen?</label><br>
+                        <select id="1-17-a" name="1-17-a">
+                            <option></option>
+                            <option value="1">Ein T-Shirt</option>
+                            <option value="2">Ein Long-Shirt</option>
+                            <option value="3">Eine Bluse</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-17-b">Wie soll Lenas neues Oberteil aussehen?</label><br>
+                        <select id="1-17-b" name="1-17-b">
+                            <option></option>
+                            <option value="1"> Braune Farbe</option>
+                            <option value="2">Quergestreift</option>
+                            <option value="3">Knallige Farbe</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-17-c">Mit wem trifft sie sich im Cafe?</label><br>
+                        <select id="1-17-c" name="1-17-c">
+                            <option></option>
+                            <option value="1">Mit Luisa</option>
+                            <option value="2">Mit Lena</option>
+                            <option value="3">Mit Lucia</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-17-d">An welchem Wochentag versucht es Lena ein weiteres Mal?</label><br>
+                        <select id="1-17-d" name="1-17-d">
+                            <option></option>
+                            <option value="1">Am Montag</option>
+                            <option value="2">Am Mittwoch</option>
+                            <option value="3">Am Donnerstag</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-17-e">Wohin f&auml;hrt Lena, um ein neues Oberteil zu kaufen?</label><br>
+                        <select id="1-17-e" name="1-17-e">
+                            <option></option>
+                            <option value="1">Nach Krefeld</option>
+                            <option value="2">Nach Neuss</option>
+                            <option value="3">Nach D&uuml;sseldorf</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-17-f">Was kauft Lena nicht in der Boutique?</label><br>
+                        <select id="1-17-f" name="1-17-f">
+                            <option></option>
+                            <option value="1">Ein Long-Shirt</option>
+                            <option value="2">Eine gestreifte Bluse</option>
+                            <option value="3">Eine Jacke</option>
+                        </select>
+                    </li>
+                </ol>
+            </fieldset>
+        </div>
+        <div id="18">
+            <p>Das unten stehende Schaubild informiert Sie &uuml;ber die T&auml;tigkeiten, die die Deutschen in den vergangenen sechzig Jahren am liebsten in ihrer Freizeit ausge&uuml;bt haben.</p>
+            <p><img src="img/test1_aufg18_freizeit.png" alt="Die f&uuml;nf beliebtesten Freizeitbesch&auml;ftigungen in Deutschland" width="400" height="273" /></p>
+            <script>
+                $(function() {
+                    var optionen =
+                            "<option value=''>...</option>" +
+                            "<option value='1'>Zeitung, Illustrierte lesen</option>" +
+                            "<option value='2'>Gartenarbeit</option>" +
+                            "<option value='3'>Einkaufen</option>" +
+                            "<option value='4'>Reparaturen, kleinere Arbeiten</option>" +
+                            "<option value='5'>Mit Kindern spielen</option>" +
+                            "<option value='6'>Theater-, Konzertbesuche</option>" +
+                            "<option value='7'>Ausruhen, ausschlafen</option>" +
+                            "<option value='8'>Freunde besuchen</option>" +
+                            "<option value='9'>Fernsehen</option>" +
+                            "<option value='10'>Besch&auml;ftigung mit der Familie</option>" +
+                            "<option value='11'>Radio h&ouml;ren</option>" +
+                            "<option value='12'>Mit Nachbarn unterhalten</option>" +
+                            "<option value='13'>Telefonieren</option>" +
+                            "<option value='14'>Hausarbeiten erledigen</option>";
+                    $( "#1-18-a, #1-18-b, #1-18-c, #1-18-d, #1-18-e" ).html( optionen );
+                });
+            </script>
+            <fieldset name="1-18" id="1-18">
+                <legend>Sehen Sie sich das Schaubild genau an und beantworten Sie dann die folgenden Fragen</legend>
+                <ol type="a">
+                    <li>
+                        <label for="1-18-a">Welche Freizeitbesch&auml;ftigung ist seit 1986 die beliebteste T&auml;tigkeit, die die Deutschen in ihrer Freizeit aus&uuml;ben?</label><br>
+                        <select name="1-18-a" id="1-18-a">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-18-b">Welche der ehemals auf Platz 1 platzierten Besch&auml;ftigungen ist bis zum Jahr 2007 aus der Liste der f&uuml;nf beliebtesten Freizeitt&auml;tigkeiten ganz verschwunden?</label><br>
+                        <select name="1-18-b" id="1-18-b">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-18-c">Welche T&auml;tigkeit war 1957, 1986 und 2007 stets in der Liste der Top 5 der beliebtesten Freizeitbesch&auml;ftigungen vertreten?</label><br>
+                        <select name="1-18-c" id="1-18-c">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-18-d">Welche T&auml;tigkeit ist im Jahr 2007 neu dazugekommen und war vorher noch nicht bei den f&uuml;nf beliebtesten Freizeitbesch&auml;ftigungen vertreten?</label><br>
+                        <select name="1-18-d" id="1-18-d">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-18-e">Welche T&auml;tigkeit war von 1957 bis 2007 beliebter: Zeitung, Illustrierte lesen oder Radio h&ouml;ren?</label><br>
+                        <select name="1-18-e" id="1-18-e">
+                        </select>
+                    </li>
+                </ol>
+            </fieldset>
+        </div>
+        <div id="19">
+            <p>Ihr Ausbildungsbetrieb plant f&uuml;r den n&auml;chsten Sommer ein gro&szlig;es Betriebsfest. Sie sollen mit drei weiteren Auszubildenden ein Team bilden und ein Beach-Volleyball-Turnier organisieren. Damit auch viele Kollegen und Kolleginnen an dem Turnier teilnehmen,
+                wollen Sie vorab Handzettel mit Informationen &uuml;ber das Turnier verteilen.
+            </p>
+            <p>Ihr Team hat einen Text entworfen. Bevor Sie den Text vervielf&auml;ltigen und verteilen,  &uuml;berpr&uuml;fen Sie zun&auml;chst die Rechtschreibung. Hat sich vielleicht der eine oder andere
+                Rechtschreibfehler eingeschlichen?</p>
+            <p> Nebenstehend finden Sie den Text des Handzettels. Manche Zeilen enthalten tats&auml;chlich
+                einen Rechtschreibfehler.</p>
+            <p> Es ist Ihre Aufgabe, die falsch geschriebenen W&ouml;rter zu verbessern, indem Sie die
+                Fehler kennzeichnen und die W&ouml;rter richtig am Ende der Zeile auf den Korrekturrand
+                schreiben.</p>
+            <p><strong> Die erste Zeile ist als Beispiel bearbeitet worden.</strong></p>
+            <p> In den Zeilen, in denen sich kein Rechtschreibfehler befindet, tragen Sie in das K&auml;stchen
+                am Rand einen Strich (-) ein.</p>
+
+            <table width="100%" border="0" cellpadding="0">
+                <tr>
+                    <th scope="row"><label for="1-19-1">1</label></th>
+                    <th width="500">
+                        <img src="img/test1_aufg19_volleyball_1.jpg" width="500" alt="Beach-Volleyball-Turnier">
+                    </th>
+                    <th><input type="text" id="1-19-1" value="Turnier"></th>
+                </tr>
+
+                <tr>
+                    <td width="6%" scope="row"><label for="1-19-2">2</label></td>
+                    <td width="500" rowspan="24">
+                        <img src="img/test1_aufg19_volleyball_2.jpg" width="500" alt="Beach-Volleyball-Turnier">
+                    </td>
+                    <td width="44%"><input type="text" id="1-19-2" name="1-19-2"></td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-3">3</label></td>
+                    <td><input type="text" id="1-19-3" name="1-19-3"></td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-4">4</label></td>
+                    <td><input type="text" id="1-19-4" name="1-19-4"></td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-5">5</label></td>
+                    <td><input type="text" id="1-19-5" name="1-19-5"></td>
+                </tr>
+                <tr>
+                    <td scope="row">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-6">6</label></td>
+                    <td><input type="text" id="1-19-6" name="1-19-6"></td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-7">7</label></td>
+                    <td><input type="text" id="1-19-7" name="1-19-7"></td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-8">8</label></td>
+                    <td><input type="text" id="1-19-8" name="1-19-8"></td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-9">9</label></td>
+                    <td><input type="text" id="1-19-9" name="1-19-9"></td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-10">10</label></td>
+                    <td><input type="text" id="1-19-10" name="1-19-10"></td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-11">11</label></td>
+                    <td><input type="text" id="1-19-11" name="1-19-11"></td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-12">12</label></td>
+                    <td><input type="text" id="1-19-12" name="1-19-12"></td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-13">13</label></td>
+                    <td><input type="text" id="1-19-13" name="1-19-13"></td>
+                </tr>
+                <tr>
+                    <td scope="row">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-14">14</label></td>
+                    <td><input type="text" id="1-19-14" name="1-19-14"></td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-15">15</label></td>
+                    <td><input type="text" id="1-19-15" name="1-19-15"></td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-16">16</label></td>
+                    <td><input type="text" id="1-19-16" name="1-19-16"></td>
+                </tr>
+                <tr>
+                    <td scope="row">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-17">17</label></td>
+                    <td><input type="text" id="1-19-17" name="1-19-17"></td>
+                </tr>
+                <tr>
+                    <td scope="row">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-18">18</label></td>
+                    <td><input type="text" id="1-19-18" name="1-19-18"></td>
+                </tr>
+                <tr>
+                    <td scope="row">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-19">19</label></td>
+                    <td><input type="text" id="1-19-19" name="1-19-19"></td>
+                </tr>
+                <tr>
+                    <td scope="row"><label for="1-19-20">20</label></td>
+                    <td><input type="text" id="1-19-20" name="1-19-20"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="20">
+            <script>
+                $(function() {
+                    var optionen =
+                            "<option value=''>...</option>" +
+                            "<option value='1'>unwiderruflich</option>" +
+                            "<option value='2'>langsam</option>" +
+                            "<option value='3'>gew&ouml;hnlich</option>" +
+                            "<option value='4'>g&uuml;nstig</option>" +
+                            "<option value='5'>z&uuml;gig</option>" +
+                            "<option value='6'>stetig</option>" +
+                            "<option value='7'>widerstandsf&auml;hig</option>" +
+                            "<option value='8'>bew&auml;hrt</option>" +
+                            "<option value='9'>ansprechend</option>";
+                    $( " #20 ").find( "select" ).html( optionen );
+                });
+            </script>
+
+            <p>Ordnen Sie die nebenstehenden Begriffe den zutreffenden sinn- bzw. sachverwandten W&ouml;rtern zu, indem Sie die Kennziffer des Begriffs in das K&auml;stchen neben dem sinn- bzw. sachverwandten Wort eintragen</p>
+            <div style="float: left; width: 49%">
+                <h3>Begriffe</h3>
+                <ol>
+                    <li>
+                        <label for="1-20-a">lahm, gem&auml;chlich</label><br>
+                        <select name="1-20-a" id="1-20-a">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-20-b">endg&uuml;ltig, unab&auml;nderlich</label><br>
+                        <select name="1-20-b" id="1-20-b">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-20-c">herk&ouml;mmlich, allt&auml;glich</label><br>
+                        <select name="1-20-c" id="1-20-c">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-20-d">schnell, flink</label><br>
+                        <select name="1-20-d" id="1-20-d">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-20-e">preiswert, billig</label><br>
+                        <select name="1-20-e" id="1-20-e">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-20-f">best&auml;ndig, dauerhaft, konstant</label><br>
+                        <select name="1-20-f" id="1-20-f">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-20-g">reizvoll</label><br>
+                        <select name="1-20-g" id="1-20-g">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-20-h">robust</label><br>
+                        <select name="1-20-h" id="1-20-h">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="1-20-i">erprobt</label><br>
+                        <select name="1-20-i" id="1-20-i">
+                        </select>
+                    </li>
+                </ol>
+            </div>
+
+<!--
+            <div style="float: right; width: 49%">
+                <h3>Sinn- bzw. sachverwandte W&ouml;rter</h3>
+                <ol type="a" id="1-20-sort">
+                    <li>lahm, gem&auml;chlich</li>
+                    <li>endg&uuml;ltig, unab&auml;nderlich</li>
+                    <li>herk&ouml;mmlich, allt&auml;glich</li>
+                    <li>schnell, flink</li>
+                    <li>preiswert, billig</li>
+                    <li>best&auml;ndig, dauerhaft, konstant</li>
+                    <li>reizvoll</li>
+                    <li>robust</li>
+                    <li>erprobt</li>
+                </ol>
+            </div>
+-->
+                </div>
+        <div id="21">
+            <p>Vervollst&auml;ndigen Sie die nebenstehenden S&auml;tze mit der grammatisch richtigen Erg&auml;nzung.</p>
+            <ol type="a">
+                <li>
+                    <label for="1-21-a">Ich habe gestern [...] kennengelernt.</label><br>
+                    <select id="1-21-a" name="1-21-a">
+                        <option></option>
+                        <option value="1">unser neuen Nachbarn</option>
+                        <option value="2">unseren neuen Nachbar</option>
+                        <option value="3">unseren neuen Nachbarn</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="1-21-b">Peter kauft ein Rosinenbr&ouml;tchen und [...].</label><br>
+                    <select id="1-21-b" name="1-21-b">
+                        <option></option>
+                        <option value="1">einen frisches Brot</option>
+                        <option value="2">ein frisches Brot</option>
+                        <option value="3">ein frische Brot</option>
+                    </select>
+                <li>
+                    <label for="1-21-c">Das ist der Kollege, [...] wir viel lernen k&ouml;nnen.</label><br>
+                    <select id="1-21-c" name="1-21-c">
+                        <option></option>
+                        <option value="1">wovon</option>
+                        <option value="2">von den</option>
+                        <option value="3">von dem</option>
+                    </select>
+                <li>
+                    <label for="1-21-d">Der Nachbar, [...] Hund immer so laut bellt, ist verreist.</label><br>
+                    <select id="1-21-d" name="1-21-d">
+                        <option></option>
+                        <option value="1">dessen</option>
+                        <option value="2">dem sein</option>
+                        <option value="3">wo sein</option>
+                    </select>
+                <li>
+                    <label for="1-21-e">Heute [...] Herr Meier und seine Sekret&auml;rin im Urlaub.</label><br>
+                    <select id="1-21-e" name="1-21-e">
+                        <option></option>
+                        <option value="1">ist</option>
+                        <option value="2">war</option>
+                        <option value="3">sind</option>
+                    </select>
+            </ol>
+        </div>
+        <div id="Ende">
+            <input type="submit" id="senden">
+            <br>
+            <div id="ergebnis"></div>
+        </div>
+    </div>
+    </div>
+</div>
+</form>
+</body>
+</html>

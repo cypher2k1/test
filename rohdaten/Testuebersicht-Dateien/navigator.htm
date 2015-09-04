@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="description" content="Produktaufstellung Eignungstests für Auszubildende der u-form Testsysteme">
+<meta name="author" content="u-form Testsysteme GmbH &amp; Co KG">
+
+<title>u-form Testsyteme Shop</title>
+
+<link>
+
+	<!-- <link rel="stylesheet" th:href="@{/navigator/css/bootstrap.min.css}"></link>  -->
+	<link rel="stylesheet" href="navigator_data/bootstrap.css">
+
+	<link rel="stylesheet" href="navigator_data/bootstrap-theme.css">
+	<link rel="stylesheet" href="navigator_data/bootstrapValidator.css">
+	<link rel="stylesheet" href="navigator_data/testsysteme.css">
+
+	
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<script>
+/*<![CDATA[*/
+var asntoggle = function (obj) {
+	var url = '/shop/asnnavi';
+	url+= '?state=' + obj.checked + '&' + 'key=' + encodeURIComponent(obj.name) + '&' + 'value=' + encodeURIComponent(obj.value);
+	window.location=url;
+}
+/*]]>*/
+</script>    
+</head>
+<body class="uformnavigator">
+
+	<div class="container uform-ic">
+		<div class="row">
+			<div class="col-md-12 uform-ictop">
+				<h1 class="icon-play icon-h1-style">Übersicht über
+					die u-form Eignungstests</h1>
+				<h2>Mit Sicherheit für die richtigen Bewerber entscheiden.</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- Output after search navigation -->
+			<div class="col-md-3 col-sm-12 uform-asn">
+				<h2>Filter</h2>
+				<div class="row">
+					<div class="panel panel-default col-md-12 col-sm-6 col-xs-12">
+						<div class="panel-heading">Berufsgruppe</div>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Multi_Berufsgruppe_ss" checked="checked" value="Kaufmännisch" type="checkbox">
+								<span class="uform-asntext">Kaufmännisch</span><span class="badge">24</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Multi_Berufsgruppe_ss" value="Gewerblich" type="checkbox">
+								<span class="uform-asntext">Gewerblich</span><span class="badge">23</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Multi_Berufsgruppe_ss" value="Dienstleistung" type="checkbox">
+								<span class="uform-asntext">Dienstleistung</span><span class="badge">15</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Multi_Berufsgruppe_ss" value="Handel" type="checkbox">
+								<span class="uform-asntext">Handel</span><span class="badge">14</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Multi_Berufsgruppe_ss" checked="checked" value="IT" type="checkbox">
+								<span class="uform-asntext">IT</span><span class="badge">13</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Multi_Berufsgruppe_ss" value="Handwerk" type="checkbox">
+								<span class="uform-asntext">Handwerk</span><span class="badge">10</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Multi_Berufsgruppe_ss" value="Lager &amp; Logistik" type="checkbox">
+								<span class="uform-asntext">Lager &amp; Logistik</span><span class="badge">4</span></li>
+						</ul>
+					</div>
+					<div class="panel panel-default col-md-12 col-sm-6 col-xs-12">
+						<div class="panel-heading">Medium</div>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="media_ss" checked="checked" value="Papier" type="checkbox">
+								<span class="uform-asntext">Papier</span><span class="badge">50</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="media_ss" value="Online" type="checkbox">
+								<span class="uform-asntext">Online</span><span class="badge">46</span></li>
+						</ul>
+					</div>
+					<div class="panel panel-default col-md-12 col-sm-6 col-xs-12">
+						<div class="panel-heading">Testart</div>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Testart_ss" value="Basistest" type="checkbox">
+								<span class="uform-asntext">Basistest</span><span class="badge">37</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Testart_ss" value="Testmodul" type="checkbox">
+								<span class="uform-asntext">Testmodul</span><span class="badge">13</span></li>
+						</ul>
+					</div>
+					<div class="panel panel-default col-md-12 col-sm-6 col-xs-12">
+						<div class="panel-heading">Testtyp</div>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Testtyp_ss" value="Leistungstest" type="checkbox">
+								<span class="uform-asntext">Leistungstest</span><span class="badge">40</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Testtyp_ss" value="Intelligenztest" type="checkbox">
+								<span class="uform-asntext">Intelligenztest</span><span class="badge">3</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Testtyp_ss" value="Persönlichkeitstest" type="checkbox">
+								<span class="uform-asntext">Persönlichkeitstest</span><span class="badge">3</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Testtyp_ss" value="Neigungstest" type="checkbox">
+								<span class="uform-asntext">Neigungstest</span><span class="badge">2</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Testtyp_ss" value="Potenzialtest" type="checkbox">
+								<span class="uform-asntext">Potenzialtest</span><span class="badge">2</span></li>
+						</ul>
+					</div>
+					<div class="panel panel-default col-md-12 col-sm-6 col-xs-12">
+						<div class="panel-heading">Zielgruppe</div>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Multi_Zielgruppe_ss" checked="checked" value="Auszubildende" type="checkbox">
+								<span class="uform-asntext">Auszubildende</span><span class="badge">45</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Multi_Zielgruppe_ss" value="Studenten" type="checkbox">
+								<span class="uform-asntext">Studenten</span><span class="badge">15</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Multi_Zielgruppe_ss" value="Berufseinsteiger" type="checkbox">
+								<span class="uform-asntext">Berufseinsteiger</span><span class="badge">3</span></li>
+						</ul>
+						<ul class="list-group">
+							<li class="list-group-item"><input onclick="asntoggle(this);" name="Multi_Zielgruppe_ss" value="Praktikanten" type="checkbox">
+								<span class="uform-asntext">Praktikanten</span><span class="badge">1</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Output search results -->
+			<div class="col-md-9 col-sm-12 uform-content">
+				<div class="row">
+					<div class="col-md-12">
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody1"> <span style="width: 10%; float: left;"><small>611</small> </span> Kaufmännisch allgemeiner Test Schwierigkeitsstufe I
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody1">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9611S.jpg" alt="Abbildung 611">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-1">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-1">
+															<p><b>Zielgruppe:</b> <br>Das Niveau des Tests ist auf 
+2-jährige kaufmännische oder kaufmännisch-verwandte Berufe abgestimmt, 
+auf die sich überwiegend Bewerber mit Hauptschulabschluss bewerben.<br><br><b>Testskalen</b>:<br></p><ul><li>Allgemeinwissen/Wirtschaft </li><li>Zahlen- und Tabellenverständnis (Grundrechenarten mit Zahlen- und Textaufgaben, Tabellen- und Schaubildaufgaben)</li><li>Sprachkompetenz Deutsch (Textverständnis, Rechtschreibung, Wortschatz, Grammatik)</li></ul><p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>90 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-1">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody2"> <span style="width: 10%; float: left;"><small>612</small> </span> Kaufmännisch allgemeiner Test Schwierigkeitsstufe III
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody2">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9612S.jpg" alt="Abbildung 612">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-2">Informationen</a></li>
+														<li role="presentation" aria-controls="guetekriterien"><a role="tab" data-toggle="tab" href="#tpg-2">Gütekriterien</a></li>
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-2">
+															<p><b>Zielgruppe:<br></b>Das Niveau des Tests ist auf 
+3-jährige kaufmännische Berufe abgestimmt, auf die sich überwiegend 
+Bewerber mit Abschluss der Sekundarstufe II (Abitur) bewerben und/oder 
+bei denen die Ausbildung verkürzt wird.<br><b><br>Testskalen:</b><br></p><ul><li>Allgemeinwissen/Wirtschaft</li><li>Zahlen- und Tabellenverständnis (Grundrechenarten, Dreisatz, Prozentrechnung) <br></li><li>Sprachkompetenz Deutsch (Textverständnis, Rechtschreibung, Wortschatz, Grammatik)</li><li>Sprachkompetenz Englisch optional (Textverständnis, Grammatik)<br></li></ul><p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>90/100 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-2">
+															<p><b>​Objektivität:</b><br>Sehr hohe Standardisierung 
+der Durchführung, Auswertung und Interpretation sowohl in der Papier- 
+als auch in der Online-Version. Hinweis: Durch die Online-Version erhöht
+ sich die Objektivität noch einmal, da mögliche menschliche Einflüsse 
+und Fehler minimiert werden.<br><br><b>Reliabilität:</b><br>Auswertung für die einzelnen Skalen des kaufmännisch allgemeinen Tests Schwierigkeitsstufe III: <br>Art der Berechnung: Interne Konsistenz nach Cronbachs Alpha-Koeffizient.<br></p><ul><li>Allgemeinbildung/Wirtschaft: r = 0,82 (bei 38 Items) </li><li>Deutschkenntnisse: r = 0,91 (bei 51 Items)</li><li>Englischkenntnisse: r = 0,76 (bei 12 Items) </li><li>Rechenkenntnisse: r = 0,82 (bei 26 Items)</li></ul><br><b>Validität:</b><br>Inhaltliche
+ Gültigkeit der Aufgaben durch Entwicklung mit 
+Ausbildungsverantwortlichen, regelmäßige Aktualisierungen, 40-jährige 
+Erfahrung der U-Form Gruppe (seit 1970) und Orientierung an 
+IHK-Prüfungsinhalten und -Ausbildungsordnungen.<br><br><b>Normierung:</b><br>Laufende
+ Normierung mittels Daten von Auszubildenden mehrerer Unternehmen. 
+Hinweis: Die Auswertung und Normierung folgt dem in Deutschland üblichen
+ IHK-Schema mit sechs Leistungsbereichen. <br>Diese kann an die Kundenanforderungen nach Vereinbarung individuell angepasst werden (Stichprobengröße: N = 561).<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody3"> <span style="width: 10%; float: left;"><small>613</small> </span> Kaufmännisch allgemeiner Test Schwierigkeitsstufe II
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody3">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9613S.jpg" alt="Abbildung 613">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-3">Informationen</a></li>
+														<li role="presentation" aria-controls="guetekriterien"><a role="tab" data-toggle="tab" href="#tpg-3">Gütekriterien</a></li>
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-3">
+															<p><b>Zielgruppe:</b><br>Das Niveau des Tests ist auf 
+3-jährige kaufmännische oder kaufmännisch-verwandte Berufe abgestimmt, 
+auf die sich überwiegend Bewerber mit Abschluss der Sekundarstufe I 
+(mittlere Reife) bewerben.<br><br><b>Testskalen</b>: <br></p><ul><li>Allgemeinbildung/Wirtschaft</li><li>Zahlen- und Tabellenverständnis (Grundrechenarten, Dreisatz, Prozentrechnung) </li><li>Sprachkompetenz Deutsch (Textverständnis, Rechtschreibung, Wortschatz, Grammatik)</li></ul><p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>90 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-3">
+															<p><b>Objektivität:</b><br>Sehr hohe Standardisierung der
+ Durchführung, Auswertung und Interpretation sowohl in der Papier- als 
+auch in der Online-Version. Hinweis: Durch die Online-Version erhöht 
+sich die Objektivität noch einmal, da mögliche menschliche Einflüsse und
+ Fehler minimiert werden.<br><br><b>Reliabilität:</b><br>Auswertung für die einzelnen Skalen des kaufmännisch allgemeinen Tests Schwierigkeitsstufe II: <br>Art der Berechnung: Interne Konsistenz nach Cronbachs Alpha-Koeffizient.<br></p><ul><li>Allgemeinbildung/Wirtschaft: r = 0,76 (bei 37 Items)</li><li>Deutschkenntnisse: r = 0,85 (bei 41 Items) </li><li>Rechenkenntnisse:r = 0,74 (bei 24 Items)</li></ul><br><b>Validität:</b><br>Inhaltliche
+ Gültigkeit der Aufgaben durch Entwicklung mit 
+Ausbildungsverantwortlichen, regelmäßige Aktualisierungen, 40-jährige 
+Erfahrung der U-Form Gruppe (seit 1970) und Orientierung an 
+IHK-Prüfungsinhalten und -Ausbildungsordnungen.<br><br><b>Normierung:</b><br>Laufende
+ Normierung mittels Daten von Auszubildenden mehrerer Unternehmen. 
+Hinweis: Die Auswertung und Normierung folgt dem in Deutschland üblichen
+ IHK-Schema mit sechs Leistungsbereichen.<br>Diese kann an die Kundenanforderungen nach Vereinbarung individuell angepasst werden (Stichprobengröße: N = 206).<br><p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody4"> <span style="width: 10%; float: left;"><small>615</small> </span> Test für Finanzdienstleister
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody4">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/615S.jpg" alt="Abbildung 615">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-4">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-4">
+															<p><b>Zielgruppe</b>: <br>Bewerber, die eine Ausbildung 
+im Bereich der Finanzdienstleistungen wie Banken und Versicherungen 
+machen möchten. Das Niveau orientiert sich an dem des Tests Best.-Nr. 
+612.<br><br><b>Testskalen:</b><br></p><ul><li>Allgemeinwissen/Wirtschaft</li><li>Zahlen- und Tabellenverständnis (Grundrechenarten, Dreisatz, Prozentrechnung, Schaubild-Verständnis)</li><li>Kundenorientierung </li><li>Sprachkompetenz Deutsch (Textverständnis, Rechtschreibung, Wortschatz, Grammatik)</li><li>Sprachkompetenz Englisch optional</li></ul><p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>90/100 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-4">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody5"> <span style="width: 10%; float: left;"><small>620.1</small> </span> Test-Modul IT für kaufmännische Berufe
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody5">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/620.jpg" alt="Abbildung 620.1">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-5">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-5">
+															<p><b>Zielgruppe</b>: <br>Bewerber, die eine Ausbildung als Informatik- oder als IT-Systemkaufmann/-frau absolvieren möchten.<br><br><b>Testskalen</b>: <br></p><ul><li>IT-Grundwissen</li><li>problemlösendes Denken</li><li>Sprachkompetenz Englisch</li></ul><br><b>Info: <br></b>Modul
+ nur in Verbindung mit einem kaufmännischen Test (Best.-Nr. 612 oder 
+613) einsetzen um einen umfassenden Eindruck vom Bewerber zu gewinnen.<b><br></b><p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>45 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>IT</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Testmodul</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-5">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody6"> <span style="width: 10%; float: left;"><small>620.2</small> </span> Test-Kombination für Informatikkaufleute und Systemkaufleute
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody6">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/96201.jpg" alt="Abbildung 620.2">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-6">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-6">
+															<p><b>Zielgruppe</b>: <br>Bewerber, die eine Ausbildung in einem der beiden kaufmännisch orientierten IT-Berufe absolvieren möchten.<br><br><b>Testskalen</b>: <br></p><ul><li>IT-Grundwissen</li><li>problemlösendes Denken </li><li>Sprachkompetenz Englisch </li><li>Allgemeinbildung/ Wirtschaft </li><li>Zahlen- und Tabellenverständnis (Grundrechenarten, Dreisatz, Prozentrechnen)</li><li>Sprachkompetenz Deutsch (Textverständnis, Rechtschreibung, Grammatik)<br></li></ul><br><b>Information:<br></b>Sie
+ erhalten zwei Testhefte (IT-Modul 620.1 + kfm. allg. Test 613) zu einem
+ reduzierten Preis. Online ist der Test als integrierte Version 
+lieferbar.<p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>135 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>IT</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-6">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody7"> <span style="width: 10%; float: left;"><small>620.3</small> </span> Test für Systemintegratoren und Systemelektroniker
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody7">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/620_002.jpg" alt="Abbildung 620.3">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-7">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-7">
+															<p><b>​Zielgruppe: </b><br>Dieser Test ist speziell auf 
+die Zielgruppe der Fachinformatiker Fachrichtung Systemintegration oder 
+Systemelektroniker zugeschnitten.<br><br><b>Testskalen: </b><br></p><ul><li>IT-Grundwissen</li><li>Rechenkenntnisse (kaufmännisches Rechnen, Algebra)</li><li>Problemlösendes Denken I</li><li>Sprachkompetenz Englisch</li></ul><br><br><br><p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>60 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>IT</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-7">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody8"> <span style="width: 10%; float: left;"><small>620.4</small> </span> Test für Fachinformatiker - Fachrichtung Anwendungsentwicklung
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody8">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/96203.jpg" alt="Abbildung 620.4">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-8">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-8">
+															<p><b>​Zielgruppe: </b><br>Dieser Test ist speziell auf die Zielgruppe der Fachinformatiker Fachrichtung Anwendungsentwicklung zugeschnitten.<br><br><b>Testskalen:<br></b></p><ul><li>IT-Grundwissen</li><li>Rechenkenntnisse (kaufmännisches Rechnen, Algebra)</li><li>Problemlösendes 
+Denken I</li><li>Problemlösendes Denken II</li><li>Sprachkompetenz Englisch </li></ul><br><b>Information:</b> <br>Sie
+ erhalten zwei Testhefte (Test 620.3 + Modul Problemlösendes Denken II).
+ Online ist der Test als integrierte Version lieferbar.<br><br><p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>80 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>IT</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-8">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody9"> <span style="width: 10%; float: left;"><small>628</small> </span> Test Konzentration &amp; Logik
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody9">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9628S.jpg" alt="Abbildung 628">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-9">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-9">
+															<p><b>Zielgruppe</b>:<br>Bewerber und Mitarbeiter, bei 
+denen konzentriertes Arbeiten vorausgesetzt wird und zugleich von 
+Interesse ist, inwieweit sie über logisches Denkvermögen verfügen.<br><br><b>Testskalen:</b><br></p><ul><li>Konzentrationsfähigkeit</li><li>logisches/schlussfolgerndes Denken</li></ul><br><b>Plus-Faktor</b>: Auf erhöhte Trennschärfe optimiertes Auswertungsschema<p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>25 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Gewerblich, Handel, IT, Handwerk</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende, Studenten</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-9">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody10"> <span style="width: 10%; float: left;"><small>628.1</small> </span> Konzentrationstest
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody10">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/628.jpg" alt="Abbildung 628.1">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-10">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-10">
+															<p><b>Zielgruppe:</b><br>Bewerber und Mitarbeiter, in 
+deren (angestrebtem) Tätigkeitsfeld konzentriertes, fehlerfreies und 
+bisweilen auch zügiges Arbeiten – selbst bei längeren, teils monotonen 
+Routineaufgaben – unerlässlich ist.<br><br><b>Testskala:</b><br></p><ul><li>Arbeitssorgfalt und -tempo</li></ul><br><b>Umfang:</b><br>6 Aufgaben, 20 Min. bzw. 25 Min. Bearbeitungszeit<br><br><b>Plus-Faktor:</b><br>Bei
+ diesem Test werden bewusst keine besonderen Anforderungen im Bereich 
+des logischen Denkens gestellt, sodass dieser Test auch für Bewerber mit
+ niedrigem oder fehlendem Bildungsabschluss geeignet ist.<p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>20/25 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Gewerblich, Handel, IT, Handwerk, Dienstleistung, Lager &amp; Logistik</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Testmodul</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-10">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody11"> <span style="width: 10%; float: left;"><small>629</small> </span> Test-Modul Sprachkompetenz Englisch
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody11">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9629S.jpg" alt="Abbildung 629">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-11">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-11">
+															<p><b>Zielgruppe:</b><br>Bewerber für einen Ausbildungsplatz, bei dem gute Englisch-Grundkenntnisse gefordert werden.<br><br><b>Testskalen:</b><br></p><ul><li>3 Aufgaben zu den Themen Grammatik, Textverständnis, Wortschatz</li></ul><b>Info:</b><br>In
+ den Tests Best.-Nr. 612, 615 und 620 werden die Englischkenntnisse 
+bereits getestet. Das Modul kann ergänzend eingesetzt werden, da sich 
+die Aufgaben des Moduls und der Tests nicht überschneiden.
+<p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>20 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Gewerblich, Dienstleistung, Handel, IT</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende, Studenten, Berufseinsteiger</span></li>
+																<li><span>Testart</span>: <span>Testmodul</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-11">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody12"> <span style="width: 10%; float: left;"><small>630</small> </span> EpsKA - Test zur Erfassung persönlicher und sozialer  Kompetenzen von Auszubildenden
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody12">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9630S.jpg" alt="Abbildung 630">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-12">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-12">
+															<p><b>Testverfahren:</b><br>Persönlichkeitstest, der speziell auf die Auswahl von Auszubildenden zugeschnitten ist.<br><br><b>Getestete Dimensionen:</b><br></p><ul><li>Teamfähigkeit (aktiv/passiv)</li><li>Berufsmotivation (intrinsisch/extrinsisch)</li><li>Entscheidungsstil (spontan/rational)</li><li>Initiative</li><li>Zuverlässigkeit</li></ul><b>Zielgruppe:<br></b>Bewerber für kaufmännische oder gewerblich/technische Ausbildungsberufe<br><br><b>Umfang:</b><br>52
+ Situationsbeschreibungen mit je zwei Handlungsalternativen zu den oben 
+aufgeführten Dimensionen. Zusätzlich enthält der Test 13 
+Situationsbeschreibungen zur Messung der Sozialen Erwünschtheit.<br><br><b>Auswertung:</b><br>Bei
+ der Auswertung wird das vom Ausbildungsunternehmen hinterlegte 
+Soll-Profil mit dem Ist-Profil des Bewerbers und dem Durchschnittsprofil
+ über alle Bewerber verglichen. Die Darstellung des Ergebnisses erfolgt 
+in graphischer und tabellarischer Form. Außerdem erhalten Sie eine 
+umfangreiche schriftliche Expertise.<br><br><b>Papier-Version:</b><br>Die
+ Auswertung der Papierversion erfolgt schnell und einfach online, da so 
+auch Papierkunden die umfangreiche schriftliche Expertise zur Verfügung 
+steht.<br><br><b>Plus-Faktor:</b><br>EpsKA ist ideal zur Ergänzung und 
+Vorbereitung strukturierter Interviews, da im Interview gezielt auf die 
+Situationsbeschreibungen des Tests eingegangen werden kann.<p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>30, 40 oder 45 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Gewerblich, Handel, Dienstleistung, IT, Lager &amp; Logistik</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende, Studenten</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Persönlichkeitstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-12">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody13"> <span style="width: 10%; float: left;"><small>633</small> </span> Potenzialtest
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody13">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9633S.jpg" alt="Abbildung 633">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-13">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-13">
+															<p><b>Zielgruppe:</b><br>Bewerber oder Mitarbeiter, die perspektivisch Führungsaufgaben wahrnehmen sollen.<br><br><b>Dimensionen:</b></p><ul><li>Flexibilität</li><li>Führungsmotivation</li><li>Durchsetzungsstärke</li><li>Initiative/Gestaltungsmotivation</li><li>Ergebnis- und Prozessorientierung</li><li>Leistungsmotivation</li><li>Emotionale Stabilität</li><li>Selbstreflexion</li></ul><br><b>Umfang:</b><br>104 Items (Aussagen)<p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>45 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Gewerblich, Handel, Dienstleistung</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende, Studenten, Berufseinsteiger</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Persönlichkeitstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-13">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody14"> <span style="width: 10%; float: left;"><small>638</small> </span> Logiktest
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody14">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9638S.jpg" alt="Abbildung 638">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-14">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-14">
+															<p><b>Zielgruppe:</b><br>Auszubildende, duale Studenten 
+oder Trainees sowie Mitarbeiter, deren (angestrebtes) Tätigkeitsfeld ein
+ erhöhtes Maß an logischem Denkvermögen erfordert.<br><br><b>Testskalen</b></p><ul><li>sprachliche Logik</li><li>numerische Logik</li><li>visuelle Mustererkennung</li></ul><br><b>Plus-Faktor:</b><br>Auf erhöhte Trennschärfe optimiertes Auswertungsschema<br><br><b>Info:</b><br>Der
+ Test setzt kein spezifisches Fachwissen voraus („kristalline 
+Intelligenz“), sondern testet vielmehr die Problemlösefähigkeit beim 
+Umgang mit unterschiedlich komplexen Sachverhalten („fluide 
+Intelligenz“).<p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>45 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Gewerblich, IT</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende, Studenten</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Intelligenztest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-14">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody15"> <span style="width: 10%; float: left;"><small>650</small> </span> Test für Kaufleute für Büromanagement
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody15">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9650S.jpg" alt="Abbildung 650">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-15">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-15">
+															<p><b>Zielgruppe:</b><br>Das Niveau des Tests ist auf die
+ 3-jährige Ausbildung "Kaufmann/-frau für Büromanagement" abgestimmt, 
+auf die sich überwiegend Bewerber mit Abschluss der Sekundarstufe I 
+(mittlere Reife) bewerben.<br><br><b>Testskalen:</b></p><ul><li>Arbeitsabläufe und -techniken</li><li>PC- und EDV-Kenntnisse</li><li>Rechenkenntnisse (Grundrechenarten, Dreisatz, Prozentrechnung)</li><li>Sprachkompetenz Deutsch (Textverständnis, Rechtschreibung, Wortschatz, Grammatik)​</li></ul><p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>60 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-15">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody16"> <span style="width: 10%; float: left;"><small>660</small> </span> Kompetenz-Test
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody16">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9660S.jpg" alt="Abbildung 660">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-16">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-16">
+															<p><b>Zielgruppe:</b><br>Schulabgänger mit einem höheren oder mittleren Schulabschluss oder gutem Hauptschulabschluss.<br><br><b>Testskalen:</b></p><ul><li>Allgemeinwissen/Wirtschaft</li><li> Medizin/Gesundheit</li><li> Kundenorientierung</li><li>Naturwissenschaften</li><li>räumliches Vorstellungsvermögen</li><li>Informationstechnologie</li><li>Rechnen</li><li>Algebra/problemlösendes Denken</li><li>Deutsch</li><li>Englisch</li></ul><br><b>Plus-Faktor:</b><br>Bei
+ der Durchführung der Online-Version erhält der Testkandidat 
+abschließend eine Übersicht für welche beiden Berufsgruppen bzw. Berufe 
+er sich am besten eignet. Durch eine Verlinkung zur IHK-Lehrstellenbörse
+ kann er zu aktuellen und wohnortnahen Ausbildungsplatzangeboten 
+gelangen.<p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>120 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Gewerblich, Handel, IT, Handwerk</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Neigungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-16">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody17"> <span style="width: 10%; float: left;"><small>670</small> </span> Test Allgemeinwissen
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody17">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9670S.jpg" alt="Abbildung 670">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-17">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-17">
+															<p><b>Zielgruppe:</b><br>Bewerber für einen Ausbildungsplatz, dessen erfolgreiche Ausübung eine gute Allgemeinbildung erfordert.<br><br><b>Testskalen:</b></p><ul><li> Allgemeines</li><li>Politik</li><li>Geschichte</li><li>Geografie/Umwelt</li></ul><p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>30 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Handel, Dienstleistung</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Testmodul</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-17">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody18"> <span style="width: 10%; float: left;"><small>671</small> </span> Test-Modul Deutschkenntnisse
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody18">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9671S.jpg" alt="Abbildung 671">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-18">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-18">
+															<p><b>Zielgruppe:</b><br>Bewerber, von denen ein sicherer Umgang mit der deutschen Sprache erwartet wird.<br><br><b>Testskalen:</b></p><ul><li>Wortschatz</li><li>Grammatik</li><li>Rechtschreibung/Kommasetzung</li></ul><br><b>Info:</b><br>Das Modul kann zur Ergänzung aller u-form:e Tests eingesetzt werden.<p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>30 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Gewerblich, Dienstleistung, Handel, IT, Handwerk</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Testmodul</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-18">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody19"> <span style="width: 10%; float: left;"><small>672</small> </span> Test-Modul Rechenkenntnisse
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody19">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9672S.jpg" alt="Abbildung 672">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-19">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-19">
+															<p><b>Zielgruppe:</b><br>Alle Ausbildungsplatzbewerber<br><br><b>Testskalen:</b></p><ul><li>Umgang mit Zahlen und Tabellen</li><li>Grundrechenarten</li><li>Dreisatz</li><li>Prozentrechnung</li></ul><br><b>Info:</b><br>Drei Schwierigkeitsstufen mit je 3 Aufgaben (9 Aufgaben insgesamt).<br>Bitte beachten Sie, dass in allen u-form:e Tests die Bereiche dieses Moduls bereits ausführlich enthalten sind.<p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>60 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Dienstleistung, Handel, Gewerblich</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Testmodul</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-19">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody20"> <span style="width: 10%; float: left;"><small>674</small> </span> Test-Modul PC-Kenntnisse
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody20">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9674S.jpg" alt="Abbildung 674">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-20">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-20">
+															<p><b>Zielgruppe:</b><br>Bewerber, von denen ein sicherer Umgang mit Computern erwartet wird.<br><br><b>Testskalen:</b></p><ul><li>technische Grundkenntnisse</li><li>Internet</li><li>Textverarbeitung/Tabellenkalkulation</li></ul><br><b>Info:</b><br>Das Modul kann zur Ergänzung aller u-form:e Tests eingesetzt werden.<p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>20 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Gewerblich, Handel, Dienstleistung, Handwerk</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Testmodul</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-20">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody21"> <span style="width: 10%; float: left;"><small>ALR</small> </span> Adaptive Leistungsstandmessung Rechnen
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody21">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9ALRS.jpg" alt="Abbildung ALR">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-21">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-21">
+															<p><b>Zielgruppe:</b><br>Bewerber mit schwachen Leistungen im Bereich des Rechnens.<br><br><b>Testkonzept:</b><br>„Branched
+ Testing“: Die Folgeaufgabe ist abhängig davon, ob die Aufgabe gelöst 
+werden konnte oder nicht. Der Bewerber erhält somit die Fragen, die 
+seinem Niveau entsprechen. Hohe Testökonomie, da in kürzerer Zeit die 
+notwendigen Informationen zur Vermessung eines bestimmten Merkmals 
+gewonnen werden.<br><br><b>Plus-Faktor:</b><br>Der Test misst den 
+Leistungsstand eines Bewerbers im Bereich „Rechnen“ in kurzer Zeit. Der 
+Test führt nicht zu Frustrationen, da der Bewerber nur Aufgaben erhält, 
+die seinem Niveau entsprechen. Sie wissen schnell, auf welchem 
+Leistungsstand Sie beim Bewerber aufbauen können.</p>
+															<ul>
+																<li><span>Dauer</span>: <span>25 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Dienstleistung, Handel</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Potenzialtest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-21">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody22"> <span style="width: 10%; float: left;"><small>LMI</small> </span> Leistungsmotivationsinventar (LMI)
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody22">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9LMIS.jpg" alt="Abbildung LMI">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-22">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-22">
+															<p><b>Testverfahren:</b><br>Der LMI ist ein Persönlichkeitstestverfahren, das wichtige berufserfolgsrelevante Aspekte misst.<br><br><b>Dimensionen:</b></p><ul><li>Beharrlichkeit</li><li>Dominanz</li><li>Engagement</li><li>Erfolgszuversicht</li><li>Flexibilität</li><li>Flow</li><li>Furchtlosigkeit</li><li>Internalität</li><li>Kompensorische Anstrengung</li><li>Leistungsstolz</li><li>Lernbereitschaft</li><li>Schwierigkeitspräferenz</li><li>Selbstständigkeit</li><li>Selbstkontrolle</li><li>Statusorientierung</li><li>Wettbewerbsorientierung</li><li>Zielsetzung</li></ul><br><b>Umfang:</b><br>Der
+ LMI liegt in einer Langversion (170 Items, 35 Min. Bearbeitungszeit) 
+und einer Kurzversion (10 Items, 10 Min. Bearbeitungszeit) vor.<p></p>
+															<ul>
+																<li><span>Dauer</span>: <span>10/35 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Gewerblich</span></li>
+																<li><span>Zielgruppe</span>: <span>Studenten, Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Leistungstest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-22">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody23"> <span style="width: 10%; float: left;"><small>LPT</small> </span> Lernpotentialtest
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody23">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9LPTS.jpg" alt="Abbildung LPT">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-23">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-23">
+															<p><b>Zielgruppe:</b><br>Bewerber mit schwächeren schulischen Leistungen.<br><br><b>Testkonzept:</b><br>Das
+ spracharme Testverfahren erfasst die Gedächtnisleistung durch 
+Erinnerungsaufgaben und das Lernpotenzial durch anwenden gelernter 
+Regeln.<br><br><b>Plus-Faktor:</b><br>Durch die spracharme Konzeption ist das Testverfahren auch für Bewerber mit geringen Deutschkenntnissen sehr gut geeignet.</p>
+															<ul>
+																<li><span>Dauer</span>: <span>35 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Gewerblich</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Potenzialtest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-23">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab">
+										<h4 class="panel-title">
+											<a class="collapsed accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne" href="#collapseBody24"> <span style="width: 10%; float: left;"><small>WMT</small> </span> Wiener Matrizen-Test (WMT)
+											</a>
+										</h4>
+									</div>
+									<div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" id="collapseBody24">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="left col-md-3">
+													<a class="thumbnail" href="#"> <img src="navigator_data/9WMTS.jpg" alt="Abbildung WMT">
+													</a>
+												</div>
+
+												<div class="right col-md-9" role="tabpanel">
+													<ul class="nav nav-pills">
+														<li class="active" role="presentation"><a aria-controls="info" role="tab" data-toggle="tab" href="#tpi-24">Informationen</a></li>
+														
+													</ul>
+													<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="tpi-24">
+															<p><b>Testverfahren:</b><br>sprachfreier, kulturunabhängiger Intelligenztest<br><br><b>Zielgruppe:</b><br>Jugendliche ab 14 Jahren und Erwachsene<br><br><b>Umfang:</b><br>24 Items zur Intelligenzerfassung<br><br><b>Plus-Faktor:</b><br>Besonders
+ geeignet für Bewerber, die die Landessprache nur schlecht oder gar 
+nicht beherrschen. Dem Test vorangestellt sind selbsterklärende 
+Beispielaufgaben.
+</p>
+															<ul>
+																<li><span>Dauer</span>: <span>25 Minuten</span></li>
+																<li><span>Berufsgruppe</span>: <span>Kaufmännisch, Gewerblich, Dienstleistung</span></li>
+																<li><span>Zielgruppe</span>: <span>Auszubildende</span></li>
+																<li><span>Testart</span>: <span>Basistest</span></li>
+																<li><span>Testtyp</span>: <span>Intelligenztest</span></li>
+															</ul>
+														</div>
+														<div role="tabpanel" class="tab-pane" id="tpg-24">
+															<p></p>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-9">
+				<div>
+		<footer>
+			<span class="copyright">© Copyright u-form:e 2015 | <a href="https://www.testsysteme.de/impressum" title="Impressum">Impressum</a>
+				| <a href="https://www.testsysteme.de/datenschutzerklarung" title="Datenschutzerklärung">Datenschutz</a> | <a href="https://www.testsysteme.de/agb" title="AGB">AGB</a>
+			</span> <span class="pull-right" style="padding-right: 10px;"><a href="https://www.u-form-shop.de/Online-Tests.htm?websale8=u-form&amp;ci=000389">Bei
+					Problemen mit diesem neuen Shop: Link zum bisherigen Shop</a></span>
+		</footer>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="navigator_data/jquery-1.js"></script>
+		<script src="navigator_data/bootstrap.js"></script>
+		<script src="navigator_data/bootstrapValidator.js"></script>
+
+	</div>
+			</div>
+		</div>
+	</div>
+	
+
+</body></html>

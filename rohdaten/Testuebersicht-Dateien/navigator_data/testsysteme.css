@@ -1,0 +1,328 @@
+@import url("//fonts.googleapis.com/css?family=Raleway:300");
+@import url("https://www.testsysteme.de/action/css/fontello.css");
+
+h1 {
+	text-transform: none !important;
+	font-family: Raleway, sans-serif !important;
+	font-weight: 300 !important;
+	font-size: 43px !important;
+}
+
+.uformshop h1 {
+	color: #007088;
+	font-size: 30px !important;
+}
+
+h2 {
+	text-transform: none !important;
+	font-family: Raleway, sans-serif !important;
+	font-weight: 300 !important;
+	font-size: 30px !important;
+}
+
+.uformshop h2 {
+	font-size: 18px !important;
+	font-weight: bold;
+}
+
+h1 a, h1 a:hover, h2 a, h2 a:hover, h3 a, h3 a:hover, h4 a, h4 a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+.uformnavigator .odd {
+	background-color: #003a61;
+	color: white;
+}
+
+.uformnavigator .odd h2 small {
+	color: white;
+}
+
+.uformnavigator .right p {
+	padding-top: 10px;
+}
+
+.uformnavigator .panel-default {
+	border: none;
+}
+
+.uformnavigator .panel-group {
+	margin-bottom: inherit;
+}
+
+.uformnavigator .panel-body {
+	background-color: #e3f0f3;
+}
+
+/* Chars */
+.icon-play:before {
+	color: #003B61;
+	margin-left: 0;
+	width: inherit !important;
+	content: "\25b6"
+}
+
+/* U-form specific */
+.uform-ictop {
+	margin-bottom: 20px;
+}
+
+/* Aftersearch navigaten ASN */
+.uform-asn>h2 {
+	margin-top: 0px;
+}
+
+.uform-asn .panel-default>.panel-heading {
+	background-image: none;
+	background-color: inherit;
+	border-color: inherit;
+	color: inherit;
+	font-family: Raleway, sans-serif !important;
+	font-size: 20px !important;
+}
+
+.uform-asn .panel-heading {
+	border: none;
+	padding: 10px 15px 10px 0px;
+}
+
+.uform-asn .panel-default {
+	border-color: transparent;
+}
+
+.uform-asn .list-group-item {
+	padding: 10px 15px 10px 0px;
+}
+
+.uform-asntext {
+	font-family: Raleway, sans-serif !important;
+	padding-left: 10px;
+}
+
+.uform-asn .badge {
+	background-color: #337AB7;
+}
+
+/* Uform COntent */
+.uform-content .col-md-12 {
+	border-top: 1px solid #555555;
+	padding: 0px;
+}
+
+.uform-content .panel-default>.panel-heading {
+	background-image: none;
+	background-color: inherit;
+	color: #337AB7;
+	font-size: 20px !important;
+}
+
+.uform-content .panel-heading {
+	border-bottom: 1px solid #555555;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	padding: 10px 15px 10px 0px;
+}
+
+.uform-content a:hover, .uform-content a:focus {
+	text-decoration: none;
+}
+
+.uform-content .panel-title:hover {
+	background-color: #e3f0f3;
+}
+
+/* Accordion modifications */
+.panel-heading .accordion-toggle:after {
+	font-family: 'Glyphicons Halflings';
+	content: "\25bc";
+	float: right;
+	color: grey;
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+	content: "\25c0";
+}
+
+.bv-form .help-block {
+	color: #a94442
+}
+
+/* Infobox */
+.uf-infobox {
+  background-color: #fff;
+  border-color: #ddd;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+  box-shadow: none;
+  padding: 45px 15px 15px;
+  border-style: solid;
+}
+
+.uf-infobox:after {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  content: "Information";
+}
+
+/* Navbar */
+.navbar {
+	margin-bottom: 0;
+}
+.navbar > .container {
+	height: 88px;
+}
+.navbar-form, .navbar-collapse {
+	padding-top: 15px;
+}
+.navbar-form .input-group input {
+	min-width: 250px;
+}
+
+#uform-top-nav {
+	background : white;
+}
+
+#uform-top-nav.in {
+	background : #999;
+}
+#uform-top-nav.in > nav {
+	background : #999;
+}
+
+/* Left menu */
+.uformleftmenu {
+	background-color : #007088;
+}
+.uformleftmenu > .nav-pills {
+	height: 85vh;
+}
+.uformleftmenu a {
+	color: white;
+}
+.uformleftmenu a:hover, .uformleftmenu a:focus {
+	color: #007088;
+}
+
+.col-md-3.uformleftmenu.navbar-collapse {
+    width: 25%;	
+}
+
+/* u-form Theme buttons */
+.uformshop .btn-default {
+    background-image: none;
+    background-color: white;
+    border-color: #007088;
+    border-style: solid;
+    border-width: 1px;
+    text-shadow: none;
+    color: #007088;
+}
+
+.uformshop .btn-primary {
+    background-image: none;
+    background-color: #007088;
+    border-color: #007088;
+    border-style: #007088;
+    border-width: 1px;
+    text-shadow: none;
+    color: white;
+	
+}
+
+.uformshop .form-control {
+	border-color: #007088;	
+}
+
+.uformshop .panel-default > .panel-heading {
+	background-color: #6EB5C9;
+	background-image: none;
+	color: white;
+}
+
+.uformshop footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	font-size: 10px;
+	color: white;
+	background-color: #007088;
+}
+
+.uformshop footer a {
+	color: white;
+}
+
+.uformshop .uform-price {
+	color: #007088;
+	font-family: Helvetica, sans-serif !important;
+	font-weight: 600 !important;
+	font-size: 24px !important;
+	text-align: right;
+}
+
+/* u-form uformshop list */
+a.uform-overview-text {
+	color: #555;
+}
+
+.uform-overview h4 {
+	border-top: #999 solid 1px;
+	border-bottom: #999 solid 1px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 0;
+}
+
+.hr-thick {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #999; /* old IE */
+    background-color: #999; /* Modern Browsers */
+}
+
+.uformhome .panel-heading {
+	padding: 0;	
+}
+
+/* orderstate */
+.orderstate {
+	padding: 20px;
+	margin-left: 0px;
+	background-color: transparent;
+	border-bottom: #dddddd 1px solid;
+	background-image: url("images/arrowrightgray.png");
+	background-position: right;
+	background-repeat: no-repeat;
+	font-family: Raleway, sans-serif;
+}
+
+.orderstate > p {
+	margin: 0px;
+}
+
+.orderstateactive {
+	background-color: #6EB5C9;
+	color: white;
+	background-image: url("images/arrowright.png");
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.orderstateback {
+	background-color: #6EB5C9;
+	color: white;
+	background-image: url("images/arrowrightback.png");
+	background-position: right;
+	background-repeat: no-repeat;
+}

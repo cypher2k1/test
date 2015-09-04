@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="jQuery UI" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="jQuery UI" />
+      <option name="frameworkVersion" value="1.11.4" />
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/jquery/jquery-ui-1.11.4.custom" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/jquery/jquery-ui-1.11.4.custom" />
+    </CLASSES>
+    <DOCUMENTATION>
+      <root url="http://api.jqueryui.com/" />
+    </DOCUMENTATION>
+    <SOURCES />
+  </library>
+</component>
